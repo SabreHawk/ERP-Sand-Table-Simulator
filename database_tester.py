@@ -12,3 +12,7 @@ except:
    db.rollback()
 db.close()
 
+#WSL TEST
+
+
+
