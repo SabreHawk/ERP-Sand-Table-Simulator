@@ -1,4 +1,4 @@
-class RawMaterial(object):
+class TestClass(object):
     __category = 0
 
     def __init__(self, in_category, in_cost, in_delivery_period):

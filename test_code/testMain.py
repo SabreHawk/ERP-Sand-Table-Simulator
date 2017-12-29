@@ -1,4 +1,4 @@
 from testClass import *
 
-newMaterial = RawMaterial(1,1,1)
+newMaterial = TestClass(1,1,1)
 newMaterial.printInfo()
