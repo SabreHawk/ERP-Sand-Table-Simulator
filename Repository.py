@@ -27,6 +27,7 @@ class Repository(object):
             return True
         else:
             return False
+
     def increase_production_num(self, in_production_id, in_num):
         if self.__production_capacity_check():
             self.__production_list[in_production_id].increase_quantity(in_num)

@@ -14,9 +14,9 @@ class ERPSystem(object):
         pass
 
     def __init_database_raw_material_info(self):
-        erp_db = pymysql.connect(self.__local_database_IP,self.__local_user_name,self.__local_user_password,self.__local_database_name)
+        erp_db = pymysql.connect(self.__local_database_IP, self.__local_user_name, self.__local_user_password, self.__local_database_name)
         db_cursor = erp_db.cursor()
-        sql = """INSERT INTO RAWMATERIAL_INFO(
+        sql = """"INSERT INTO RAWMATERIAL_INFO(
                   ID, NAME, COST, DELIVERYTIME)
                   VALUES ('1', 'p1', 20, 2)"""
         try:
@@ -25,3 +25,4 @@ class ERPSystem(object):
         except:
             erp_db.rollback()
             erp_db.close()
+
