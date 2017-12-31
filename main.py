@@ -5,4 +5,4 @@ import DatabaseManager
 
 
 if __name__ == '__main__':
-    temp_system = DatabaseManager.DatabaseManager()
+    temp_system = ERPSystem.ERPSystem()
