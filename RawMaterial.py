@@ -1,6 +1,6 @@
 class RawMaterial(object):
 
-    def __init__(self, in_cost, in_delivery_time, in_quantity = 0):
+    def __init__(self, in_cost, in_delivery_time, in_quantity=0):
         self.__cost = in_cost
         self.__deliveryTime = in_delivery_time
         self.__quantity = in_quantity
