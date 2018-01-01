@@ -1,9 +1,16 @@
 class RawMaterial(object):
 
-    def __init__(self, in_cost, in_delivery_time, in_quantity=0):
+    def __init__(self, in_name, in_cost, in_delivery_time, in_quantity=1):
+        self.__name = in_name
         self.__cost = in_cost
         self.__deliveryTime = in_delivery_time
         self.__quantity = in_quantity
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, in_name):
+        self.__name = in_name
 
     def get_cost(self):
         return self.__cost
@@ -28,3 +35,9 @@ class RawMaterial(object):
 
     def decrease_quantity(self, in_num):
         self.__quantity -= in_num
+
+    def display_info(self):
+        print("<Object Type : RawMaterial")
+        print("cost : %s" % self.__cost)
+        print("delivery_time : %s" % self.__deliveryTime)
+        print("quantity : %s>" % self.__quantity)
