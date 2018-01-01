@@ -30,15 +30,14 @@ class DatabaseManager(object):
 
     def __create_raw_material_order_table(self):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_ORDER(
-                            ID VARCHAR(20 PRIMARY KEY,
+                            ID VARCHAR(20) PRIMARY KEY,
                             NAME VARCHAR(20) NOT NULL,
                             RAWMATERIAL_ID VARCHAR(20) NOT NULL,
-                            NUMBER INT NOT NULL,
-                            DELIVERY_TIME VARCHAR(20) NOT NULL,
+                            QUANTITY INT NOT NULL,
+                            DELIVERYTIME INT NOT NULL,
                             ORDER_DATE VARCHAR(20) NOT NULL,
-                            ARRIVAL_DATE VARCHAR(20) NOT NULL)
-                            """
-        self.__execute_sql()
+                            ARRIVAL_DATE VARCHAR(20) NOT NULL)"""
+        self.__db_cursor.execute(self.__db_sql)
 
     def __insert_raw_material_order_data(self):
         params = []
@@ -48,15 +47,15 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
-            self.__db_sql = """INSERT INTO RAWMATERIAL_ORDER(
-                                ID,NAME,RAWMATERIAL_ID,NUMBER,DELIVERY_TIME,ORDER_DATE,ARRIVAL_DATE)
-                                VALUES (%s,%s,%s,%d,%d,%s,%s)
+
+        self.__db_sql = """INSERT INTO RAWMATERIAL_ORDER
+                                VALUES (%s,%s,%s,%s,%s,%s,%s)
                                 """
-        for i in range(4):
-            params.append((i, 'order'+str(i), int(random.uniform(0, i*3)), 2, '1-1', '1-3'))
+        for i in range(5):
+            params.append((str(i), 'order'+str(i), '2', int(random.randint(1, i*3+2)), int(2), '1-1', '1-3'))
 
         try:
-            self.__db_cursor.executemany(self.__db_sql,params)
+            self.__db_cursor.executemany(self.__db_sql, params)
             self.__erp_db.commit()
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
@@ -66,10 +65,10 @@ class DatabaseManager(object):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_INFO(
                             ID VARCHAR(20) PRIMARY KEY,
                             NAME VARCHAR(20) NOT NULL,
-                            COST FLOAT(20) NOT NULL,
+                            COST FLOAT NOT NULL,
                             DELIVERYTIME INT NOT NULL)"""
 
-        self.__execute_sql()
+        self.__db_cursor.execute(self.__db_sql)
 
     def __insert_raw_material_info_data(self):
         params = []
@@ -80,11 +79,10 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
+        self.__db_sql = """INSERT INTO RAWMATERIAL_INFO
+                            VALUES (%s,%s, %s, %s)"""
         for i in range(4):
-            self.__db_sql = """INSERT INTO RAWMATERIAL_INFO(
-                  ID, NAME, COST, DELIVERYTIME)
-                  VALUES (%s,%s, %s, %s)"""
-            params.append((i, 'p' + str(i), str(i * 10), int(random.uniform(1, 5))))
+            params.append((i, 'R' + str(i), str(i * 10), int(random.randint(1, 5))))
 
         try:
             self.__db_cursor.executemany(self.__db_sql, params)
@@ -112,16 +110,10 @@ class DatabaseManager(object):
     def __init_table_raw_material_order(self):
         pass
 
-    def __create_raw_material_order_table(self):
-        self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_ORDER
-                            ID VARCHAR(20) NOT NULL PRIMARY  KEY,
-                            RAWMATERIAL_ID VARCHAR (20) NOT NULL,
-                            ORDER_TIME VARCHAR (20) NOT NULL,
-                            ARRIVE_TIME VARCHAR (20) NOT NULL"""
-        self.__execute_sql()
 
     def insert_raw_material_order(self, in_raw_material_order):
         self.__db_sql = """INSERT INTO RAWMATERIAL_INFO"""
+
     def query_raw_material_info(self, in_raw_material_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_INFO WHERE ID = %s"""
         try:

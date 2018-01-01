@@ -28,13 +28,8 @@ class ERPSystem(object):
         pass
 
     def test_main(self):
-        temp_date = ERPDate.ERPDate(1, 2)
-        temp_raw_material = RawMaterial.RawMaterial('testRawMaterial', 1, 1)
-        temp_order = RawMaterialOrder.RawMaterialOrder(temp_raw_material, temp_date)
-        self.__raw_material_order_manager.add_raw_material_order(temp_order)
-        self.__raw_material_order_manager.add_raw_material_order(temp_order)
-        # self.__raw_material_order_manager.display__info()
-        self.sys_add_raw_material_order(2, 2, 2)
+        pass
+
 
     def sys_add_raw_material_order(self, in_raw_material_id, in_num, in_date):
         temp_delivery_time = self.__database_manager.query_raw_material_info(in_raw_material_id)[3]
