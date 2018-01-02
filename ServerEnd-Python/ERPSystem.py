@@ -1,11 +1,10 @@
-import pymysql
+import DatabaseManager
 import ERPDate
-import User
-import RawMaterial
 import RawMaterialOrder
 import RawMaterialOrderManager
-import DatabaseManager
 import RepositoryManager
+import User
+import socket
 
 
 class ERPSystem(object):
@@ -15,9 +14,10 @@ class ERPSystem(object):
         self.__sys_data = ERPDate.ERPDate(1, 1)
         self.__raw_material_order_manager = RawMaterialOrderManager.RawMaterialOrderManager()
         self.__repository_manager = RepositoryManager.RepositoryManager()
-
         self.__database_manager = DatabaseManager.DatabaseManager()
         self.__init_system()
+        self.__request_msg = []
+        self.__fcn_dic = []
 
     def __init_system(self):
         self.__init_root_user()
@@ -27,8 +27,16 @@ class ERPSystem(object):
         root_user = User.User('root', '0000')
         self.__active_user_list.append(root_user)
 
-    def __init_database(self):
-        pass
+    def __init_function_dic(self):
+        self.__fcn_dic = ['sys_add_raw_material_info', 'sys_add_raw_material_order',
+                          'sys_update_raw_material_repository',
+                          'sys_update_production_repository', 'sys_query_raw_material_info',
+                          'sys_query_raw_material_order' 
+                          'sys_query_raw_material_repository', 'sys_query_production_info',
+                          'sys_query_production_repository' 
+                          'sys_query_production_order', 'sys_get_raw_material_category_total_num',
+                          'sys_get_raw_material_category_remain_num' 
+                          'sys_produce', 'sys_commit_production_order']
 
     def test_main(self):
         self.sys_add_raw_material_info('4', 'R4', 3, 8)
@@ -42,6 +50,20 @@ class ERPSystem(object):
 
     def sys_login(self, in_name, in_passwd):
         return self.__database_manager.query_account_info(in_name)[0][1] == in_passwd
+
+    def sys_network_moniter(self):
+        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+        host_ip = '45.77.112.171'
+        port = 1830
+        server_socket.bind((host_ip, port))
+        server_socket.listen(5)
+        msg = "TCP Connection Established"
+        while True:
+            (client_socket, address) = server_socket.accept()
+            client_socket.send(msg.encode('utf-8'))
+            self.__request_msg = analyze_request(client_socket.recv(1024).decode('utf-8').split())
+            client_socket.close()
 
     def sys_add_raw_material_info(self, in_id, in_name, in_cost, in_delivery_time):
         self.__database_manager.insert_raw_material_info(in_id, in_name, in_cost, in_delivery_time)
@@ -126,4 +148,3 @@ def analyze_production_info(in_tuple):
 
 def analyze_request(in_request):
     return in_request.split()
-
