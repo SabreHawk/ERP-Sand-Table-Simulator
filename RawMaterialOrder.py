@@ -3,7 +3,7 @@ import ERPDate
 
 class RawMaterialOrder(object):
 
-    def __init__(self, in_id, in_name, in_raw_material_id,in_num, in_delivery_time, in_date):
+    def __init__(self, in_id, in_name, in_raw_material_id, in_num, in_delivery_time, in_date):
         self.__id = in_id
         self.__name = in_name
         self.__raw_material_id = in_raw_material_id

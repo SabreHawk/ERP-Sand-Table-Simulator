@@ -33,9 +33,12 @@ class ERPSystem(object):
     def test_main(self):
         self.sys_add_raw_material_info('4', 'R4', 3, 8)
         self.sys_add_raw_material_order(6, 4, 2)
-        print(self.sys_query_production_repository(2))
         self.sys_produce(2, 2)
-        print(self.sys_query_production_repository(2))
+        for i in range(4):
+            print(self.sys_query_production_order(i))
+        self.sys_commit_production_order(1)
+        for i in range(4):
+            print(self.sys_query_production_order(i))
 
     def sys_add_raw_material_info(self, in_id, in_name, in_cost, in_delivery_time):
         self.__database_manager.insert_raw_material_info(in_id, in_name, in_cost, in_delivery_time)
@@ -71,6 +74,9 @@ class ERPSystem(object):
     def sys_query_production_repository(self, in_id):
         return self.__database_manager.query_production_repository(in_id)
 
+    def sys_query_production_order(self, in_id):
+        return self.__database_manager.query_production_order(in_id)
+
     def sys_get_raw_material_category_total_num(self):
         return int(self.__database_manager.query_raw_material_category_total_num()[0][0])
 
@@ -93,6 +99,18 @@ class ERPSystem(object):
         for i in range(rm_total_num):
             self.sys_update_raw_material_repository(i, -1 * rm_required_num[i])
         self.sys_update_production_repository(in_id, in_num)
+
+    def sys_commit_production_order(self, in_id):
+        temp_result = self.__database_manager.query_production_order(in_id)
+        p_order_id = temp_result[0][2]
+        p_order_quantity = temp_result[0][3]
+        p_stored_quantity = self.__database_manager.query_production_repository(p_order_id)[0][1]
+        if p_stored_quantity >= p_order_quantity:
+            self.__database_manager.update_production_repository(p_order_id, -1 * p_order_quantity)
+            self.__database_manager.update_production_order(in_id, 1)
+            return True
+        else:
+            return False
 
 
 def analyze_production_info(in_tuple):

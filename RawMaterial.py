@@ -10,7 +10,7 @@ class RawMaterial(object):
     def get_id(self):
         return self.__id
 
-    def set_id(self,in_id):
+    def set_id(self, in_id):
         self.__id = in_id
 
     def get_name(self):

@@ -20,6 +20,7 @@ class DatabaseManager(object):
         self.__init_production_info_table()
         self.__init_raw_material_repository_table()
         self.__init_production_repository_table()
+        self.__init_production_order_table()
         pass
 
     # Init Database Tables And Data
@@ -44,7 +45,9 @@ class DatabaseManager(object):
         self.__insert_initial_production_repository_data()
 
     def __init_production_order_table(self):
-        pass
+        self.__create_production_order_table()
+        self.__insert_initial_production_order_data()
+
     def __create_raw_material_info_table(self):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_INFO(
                                 ID VARCHAR(20) PRIMARY KEY,
@@ -88,9 +91,10 @@ class DatabaseManager(object):
                             ID VARCHAR(20) PRIMARY  KEY,
                             NAME VARCHAR(20) NOT NULL,
                             PRODUCTION_ID VARCHAR(20) NOT NULL,
-                            QUANTITY INT NOT NULL )"""
+                            QUANTITY INT NOT NULL,
+                            STATUS INT NOT NULL DEFAULT 0)"""
         self.__db_cursor.execute(self.__db_sql)
-    
+
     def __insert_initial_raw_material_order_data(self):
         params = []
         self.__db_sql = """DELETE FROM RAWMATERIAL_ORDER"""
@@ -144,8 +148,10 @@ class DatabaseManager(object):
         self.__db_sql = """INSERT INTO PRODUCTION_INFO VALUES (%s,%s,%s)"""
         params = []
         for i in range(4):
-            params.append((i, 'p' + str(i), str(random.randint(0, 4)) + '-' + str(random.randint(1, 10)) + '/' + str(random.randint(0,
-                          4)) + '-' + str(random.randint(1, 10))))
+            params.append((i, 'p' + str(i),
+                           str(random.randint(0, 4)) + '-' + str(random.randint(1, 10)) + '/' + str(random.randint(0,
+                                                                                                                   4)) + '-' + str(
+                               random.randint(1, 10))))
         try:
             self.__db_cursor.executemany(self.__db_sql, params)
             self.__erp_db.commit()
@@ -184,6 +190,25 @@ class DatabaseManager(object):
         params = []
         for i in range(4):
             params.append((i, random.randint(1, 10)))
+        try:
+            self.__db_cursor.executemany(self.__db_sql, params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def __insert_initial_production_order_data(self):
+        self.__db_sql = """DELETE FROM PRODUCTION_ORDER"""
+        try:
+            self.__db_cursor.execute(self.__db_sql)
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+        self.__db_sql = """INSERT INTO PRODUCTION_ORDER VALUES (%s,%s,%s,%s,%s)"""
+        params = []
+        for i in range(4):
+            params.append((i, 'po' + str(i), random.randint(0, 4), random.randint(1, 3), 0))
         try:
             self.__db_cursor.executemany(self.__db_sql, params)
             self.__erp_db.commit()
@@ -232,7 +257,7 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def query_raw_material_order(self,in_order_id):
+    def query_raw_material_order(self, in_order_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_ORDER WHERE ID = %s"""
         try:
             self.__db_cursor.execute(self.__db_sql, str(in_order_id))
@@ -241,7 +266,7 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def query_production_info(self,in_production_id):
+    def query_production_info(self, in_production_id):
         self.__db_sql = """SELECT * FROM PRODUCTION_INFO WHERE ID = %s"""
         try:
             self.__db_cursor.execute(self.__db_sql, str(in_production_id))
@@ -250,7 +275,7 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def query_raw_material_repository(self,in_raw_material_id):
+    def query_raw_material_repository(self, in_raw_material_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_REPOSITORY WHERE RAWMATERIAL_ID = %s"""
         try:
             self.__db_cursor.execute(self.__db_sql, str(in_raw_material_id))
@@ -268,22 +293,11 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def update_raw_material_repository(self,in_id,in_num):
-        self.__db_sql = "UPDATE RAWMATERIAL_REPOSITORY SET NUM = NUM + %s WHERE RAWMATERIAL_ID = %s"
-        params = (in_num,in_id)
+    def query_production_order(self, in_id):
+        self.__db_sql = """SELECT * FROM PRODUCTION_ORDER WHERE ID = %s"""
         try:
-            self.__db_cursor.execute(self.__db_sql,params)
-            self.__erp_db.commit()
-        except pymysql.DatabaseError as error:
-            self.__erp_db.rollback()
-            print("Error: {}".format(error.args))
-
-    def update_production_repository(self,in_id,in_num):
-        self.__db_sql = "UPDATE PRODUCTION_REPOSITORY SET NUM = NUM + %s WHERE PRODUCTION_ID = %s"
-        params = (in_num,in_id)
-        try:
-            self.__db_cursor.execute(self.__db_sql,params)
-            self.__erp_db.commit()
+            self.__db_cursor.execute(self.__db_sql, in_id)
+            return self.__db_cursor.fetchall()
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
@@ -302,6 +316,36 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql)
             return self.__db_cursor.fetchall()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def update_raw_material_repository(self, in_id, in_num):
+        self.__db_sql = "UPDATE RAWMATERIAL_REPOSITORY SET NUM = NUM + %s WHERE RAWMATERIAL_ID = %s"
+        params = (in_num, in_id)
+        try:
+            self.__db_cursor.execute(self.__db_sql, params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def update_production_repository(self, in_id, in_num):
+        self.__db_sql = "UPDATE PRODUCTION_REPOSITORY SET NUM = NUM + %s WHERE PRODUCTION_ID = %s"
+        params = (in_num, in_id)
+        try:
+            self.__db_cursor.execute(self.__db_sql, params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def update_production_order(self, in_id, in_flag):
+        self.__db_sql = """UPDATE PRODUCTION_ORDER SET STATUS = %s WHERE  ID = %s"""
+        params = (in_flag, in_id)
+        try:
+            self.__db_cursor.execute(self.__db_sql, params)
+            self.__erp_db.commit()
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
