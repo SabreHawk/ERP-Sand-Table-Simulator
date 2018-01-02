@@ -19,6 +19,7 @@ class DatabaseManager(object):
         self.__init_raw_material_order_table()
         self.__init_production_info_table()
         self.__init_raw_material_repository_table()
+        self.__init_production_repository_table()
         pass
 
     # Init Database Tables And Data
@@ -38,6 +39,20 @@ class DatabaseManager(object):
         self.__create_raw_material_repository_table()
         self.__insert_initial_raw_material_repository_data()
 
+    def __init_production_repository_table(self):
+        self.__create_production_repository_table()
+        self.__insert_initial_production_repository_data()
+
+    def __init_production_order_table(self):
+        pass
+    def __create_raw_material_info_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_INFO(
+                                ID VARCHAR(20) PRIMARY KEY,
+                                NAME VARCHAR(20) NOT NULL,
+                                COST INT NOT NULL,
+                                DELIVERYTIME INT NOT NULL)"""
+        self.__db_cursor.execute(self.__db_sql)
+
     def __create_raw_material_order_table(self):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_ORDER(
                             ID VARCHAR(20) PRIMARY KEY,
@@ -49,6 +64,33 @@ class DatabaseManager(object):
                             ARRIVAL_DATE VARCHAR(20) NOT NULL)"""
         self.__db_cursor.execute(self.__db_sql)
 
+    def __create_production_info_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS PRODUCTION_INFO(
+                                ID VARCHAR(20) PRIMARY  KEY ,
+                                NAME VARCHAR(20) NOT NULL ,
+                                RAWMATERIAL_COMPOSITION VARCHAR(20)NOT NULL)"""
+        self.__db_cursor.execute(self.__db_sql)
+
+    def __create_raw_material_repository_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_REPOSITORY(
+                            RAWMATERIAL_ID VARCHAR(2) PRIMARY  KEY,
+                            NUM INT NOT NULL)"""
+        self.__db_cursor.execute(self.__db_sql)
+
+    def __create_production_repository_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS PRODUCTION_REPOSITORY(
+                                   PRODUCTION_ID VARCHAR(20) PRIMARY KEY,
+                                   NUM INT NOT NULL)"""
+        self.__db_cursor.execute(self.__db_sql)
+
+    def __create_production_order_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS PRODUCTION_ORDER(
+                            ID VARCHAR(20) PRIMARY  KEY,
+                            NAME VARCHAR(20) NOT NULL,
+                            PRODUCTION_ID VARCHAR(20) NOT NULL,
+                            QUANTITY INT NOT NULL )"""
+        self.__db_cursor.execute(self.__db_sql)
+    
     def __insert_initial_raw_material_order_data(self):
         params = []
         self.__db_sql = """DELETE FROM RAWMATERIAL_ORDER"""
@@ -71,14 +113,6 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def __create_raw_material_info_table(self):
-        self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_INFO(
-                            ID VARCHAR(20) PRIMARY KEY,
-                            NAME VARCHAR(20) NOT NULL,
-                            COST INT NOT NULL,
-                            DELIVERYTIME INT NOT NULL)"""
-        self.__db_cursor.execute(self.__db_sql)
-
     def __insert_initial_raw_material_info_data(self):
         params = []
         self.__db_sql = """DELETE FROM RAWMATERIAL_INFO """
@@ -100,13 +134,6 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def __create_production_info_table(self):
-        self.__db_sql = """CREATE TABLE IF NOT EXISTS PRODUCTION_INFO(
-                            ID VARCHAR(20) PRIMARY  KEY ,
-                            NAME VARCHAR(20) NOT NULL ,
-                            RAWMATERIAL_COMPOSITION VARCHAR(20)NOT NULL)"""
-        self.__db_cursor.execute(self.__db_sql)
-
     def __insert_initial_production_info_data(self):
         self.__db_sql = """DELETE FROM PRODUCTION_INFO"""
         try:
@@ -126,12 +153,6 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def __create_raw_material_repository_table(self):
-        self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_REPOSITORY(
-                            RAWMATERIAL_ID VARCHAR(2) PRIMARY  KEY,
-                            NUM INT NOT NULL)"""
-        self.__db_cursor.execute(self.__db_sql)
-
     def __insert_initial_raw_material_repository_data(self):
         self.__db_sql = """DELETE FROM RAWMATERIAL_REPOSITORY"""
         try:
@@ -141,6 +162,25 @@ class DatabaseManager(object):
             print("Error: {}".format(error.args))
 
         self.__db_sql = """INSERT INTO RAWMATERIAL_REPOSITORY VALUES(%s,%s)"""
+        params = []
+        for i in range(4):
+            params.append((i, random.randint(10, 50)))
+        try:
+            self.__db_cursor.executemany(self.__db_sql, params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def __insert_initial_production_repository_data(self):
+        self.__db_sql = """DELETE FROM PRODUCTION_REPOSITORY"""
+        try:
+            self.__db_cursor.execute(self.__db_sql)
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+        self.__db_sql = """INSERT INTO PRODUCTION_REPOSITORY VALUES(%s,%s)"""
         params = []
         for i in range(4):
             params.append((i, random.randint(1, 10)))
@@ -214,6 +254,53 @@ class DatabaseManager(object):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_REPOSITORY WHERE RAWMATERIAL_ID = %s"""
         try:
             self.__db_cursor.execute(self.__db_sql, str(in_raw_material_id))
+            return self.__db_cursor.fetchall()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def query_production_repository(self, in_production_id):
+        self.__db_sql = """SELECT * FROM PRODUCTION_REPOSITORY WHERE PRODUCTION_ID = %s"""
+        try:
+            self.__db_cursor.execute(self.__db_sql, str(in_production_id))
+            return self.__db_cursor.fetchall()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def update_raw_material_repository(self,in_id,in_num):
+        self.__db_sql = "UPDATE RAWMATERIAL_REPOSITORY SET NUM = NUM + %s WHERE RAWMATERIAL_ID = %s"
+        params = (in_num,in_id)
+        try:
+            self.__db_cursor.execute(self.__db_sql,params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def update_production_repository(self,in_id,in_num):
+        self.__db_sql = "UPDATE PRODUCTION_REPOSITORY SET NUM = NUM + %s WHERE PRODUCTION_ID = %s"
+        params = (in_num,in_id)
+        try:
+            self.__db_cursor.execute(self.__db_sql,params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def query_raw_material_category_total_num(self):
+        self.__db_sql = """SELECT COUNT(*) FROM RAWMATERIAL_INFO """
+        try:
+            self.__db_cursor.execute(self.__db_sql)
+            return self.__db_cursor.fetchall()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def query_raw_material_category_remain_num(self):
+        self.__db_sql = """SELECT COUNT(*) FROM RAWMATERIAL_REPOSITORY """
+        try:
+            self.__db_cursor.execute(self.__db_sql)
             return self.__db_cursor.fetchall()
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()

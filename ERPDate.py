@@ -13,7 +13,6 @@ class ERPDate(object):
             self.__quarter = 1
 
     def add_date(self, in_quarter):
-        print(in_quarter)
         temp_year = self.__year + (self.__quarter + in_quarter) // self.__quarter_num
         temp_quarter = (self.__quarter + in_quarter) % self.__quarter_num
         if temp_quarter is 0:
