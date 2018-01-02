@@ -32,9 +32,13 @@ class ERPSystem(object):
     def test_main(self):
         self.sys_add_raw_material_info('4', 'R4', 3, 8)
         self.sys_add_raw_material_order(6, 4, 2)
+        print(self.sys_query_production_info(2))
+        print(self.sys_query_raw_material_info(2))
+        print(self.sys_query_raw_material_order(6))
+        print(self.sys_query_raw_material_repository(2))
 
     def sys_add_raw_material_info(self, in_id, in_name, in_cost, in_delivery_time):
-        self.__database_manager.insert__raw_material_info(in_id, in_name, in_cost, in_delivery_time)
+        self.__database_manager.insert_raw_material_info(in_id, in_name, in_cost, in_delivery_time)
 
     def sys_add_raw_material_order(self, in_order_id, in_raw_material_id, in_num):
         temp_delivery_time = self.__database_manager.query_raw_material_info(in_raw_material_id)[0][3]
@@ -45,3 +49,16 @@ class ERPSystem(object):
 
     def sys_add_raw_material_repository(self, id_material, in_num):
         self.__repository_manager.add_raw_material(id_material, in_num)
+
+    def sys_query_raw_material_info(self,in_id):
+        return self.__database_manager.query_raw_material_info(in_id)
+
+    def sys_query_raw_material_order(self,in_id):
+        return self.__database_manager.query_raw_material_order(in_id)
+
+    def sys_query_raw_material_repository(self,in_id):
+        return self.__database_manager.query_raw_material_repository(in_id)
+
+    def sys_query_production_info(self,in_id):
+        return self.__database_manager.query_production_info(in_id)
+
