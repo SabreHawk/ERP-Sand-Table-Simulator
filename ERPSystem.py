@@ -1,10 +1,11 @@
 import pymysql
 import ERPDate
+import User
 import RawMaterial
 import RawMaterialOrder
 import RawMaterialOrderManager
-import User
 import DatabaseManager
+import RepositoryManager
 
 
 class ERPSystem(object):
@@ -13,6 +14,7 @@ class ERPSystem(object):
         self.__active_user_list = []
         self.__sys_data = ERPDate.ERPDate(1, 1)
         self.__raw_material_order_manager = RawMaterialOrderManager.RawMaterialOrderManager()
+        self.__repository_manager = RepositoryManager.RepositoryManager()
         self.__database_manager = DatabaseManager.DatabaseManager()
         self.__init_system()
 
@@ -41,5 +43,5 @@ class ERPSystem(object):
         self.__raw_material_order_manager.add_raw_material_order(temp_raw_material_order)
         self.__database_manager.insert_raw_material_order(temp_raw_material_order)
 
-    def sys_add_raw_material_repository(self,id_material,in_num):
-
+    def sys_add_raw_material_repository(self, id_material, in_num):
+        self.__repository_manager.add_raw_material(id_material, in_num)
