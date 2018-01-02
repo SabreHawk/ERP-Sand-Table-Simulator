@@ -40,6 +40,9 @@ class ERPSystem(object):
         for i in range(4):
             print(self.sys_query_production_order(i))
 
+    def sys_login(self, in_name, in_passwd):
+        return self.__database_manager.query_account_info(in_name)[0][1] == in_passwd
+
     def sys_add_raw_material_info(self, in_id, in_name, in_cost, in_delivery_time):
         self.__database_manager.insert_raw_material_info(in_id, in_name, in_cost, in_delivery_time)
 
@@ -119,3 +122,8 @@ def analyze_production_info(in_tuple):
     for s in temp_info:
         results.append((s[0], s[2]))
     return results
+
+
+def analyze_request(in_request):
+    return in_request.split()
+

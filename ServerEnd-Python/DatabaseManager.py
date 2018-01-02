@@ -21,9 +21,14 @@ class DatabaseManager(object):
         self.__init_raw_material_repository_table()
         self.__init_production_repository_table()
         self.__init_production_order_table()
+        self.__init_account_info_table()
         pass
 
     # Init Database Tables And Data
+    def __init_account_info_table(self):
+        self.__create_account_info_table()
+        self.__insert_root_account_info_data()
+
     def __init_raw_material_info_table(self):
         self.__create_raw_material_info_table()
         self.__insert_initial_raw_material_info_data()
@@ -47,6 +52,12 @@ class DatabaseManager(object):
     def __init_production_order_table(self):
         self.__create_production_order_table()
         self.__insert_initial_production_order_data()
+
+    def __create_account_info_table(self):
+        self.__db_sql = """CREATE TABLE IF NOT EXISTS ACCOUNT_INFO(
+                            NAME VARCHAR(20) PRIMARY  KEY,
+                            PASSWORD VARCHAR(20) NOT NULL) """
+        self.__db_cursor.execute(self.__db_sql)
 
     def __create_raw_material_info_table(self):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_INFO(
@@ -94,6 +105,18 @@ class DatabaseManager(object):
                             QUANTITY INT NOT NULL,
                             STATUS INT NOT NULL DEFAULT 0)"""
         self.__db_cursor.execute(self.__db_sql)
+
+    def __insert_root_account_info_data(self):
+        params = []
+        self.__db_sql = """DELETE FROM ACCOUNT_INFO"""
+        try:
+            self.__db_cursor.execute(self.__db_sql)
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+        self.__db_sql = """INSERT INTO ACCOUNT_INFO VALUES ('root','root')"""
+        self.__execute_sql()
 
     def __insert_initial_raw_material_order_data(self):
         params = []
@@ -244,6 +267,15 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
+
+    def query_account_info(self, in_name):
+        self.__db_sql = "SELECT * FROM ACCOUNT_INFO WHERE NAME = %s"
+        try:
+            self.__db_cursor.execute(self.__db_sql, in_name)
+            return self.__db_cursor.fetchall()
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
