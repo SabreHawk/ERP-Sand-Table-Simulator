@@ -14,7 +14,6 @@ class DatabaseManager(object):
         self.__erp_db = pymysql.connect(self.__local_database_IP, self.__local_user_name, self.__local_user_password, self.__local_database_name)
         self.__db_cursor = self.__erp_db.cursor()
         self.__db_sql = ""
-
         self.__init_raw_material_info_table()
         self.__init_raw_material_order_table()
         pass
@@ -22,11 +21,11 @@ class DatabaseManager(object):
     # Init Database Tables And Data
     def __init_raw_material_info_table(self):
         self.__create_raw_material_info_table()
-        self.__insert_raw_material_info_data()
+        self.__insert_inital_raw_material_info_data()
 
     def __init_raw_material_order_table(self):
         self.__create_raw_material_order_table()
-        self.__insert_raw_material_order_data()
+        self.__insert_inital_raw_material_order_data()
 
     def __create_raw_material_order_table(self):
         self.__db_sql = """CREATE TABLE IF NOT EXISTS RAWMATERIAL_ORDER(
@@ -39,7 +38,7 @@ class DatabaseManager(object):
                             ARRIVAL_DATE VARCHAR(20) NOT NULL)"""
         self.__db_cursor.execute(self.__db_sql)
 
-    def __insert_raw_material_order_data(self):
+    def __insert_inital_raw_material_order_data(self):
         params = []
         self.__db_sql = """DELETE FROM RAWMATERIAL_ORDER"""
         try:
@@ -51,7 +50,7 @@ class DatabaseManager(object):
         self.__db_sql = """INSERT INTO RAWMATERIAL_ORDER
                                 VALUES (%s,%s,%s,%s,%s,%s,%s)
                                 """
-        for i in range(5):
+        for i in range(4):
             params.append((str(i), 'order'+str(i), '2', int(random.randint(1, i*3+2)), int(2), '1-1', '1-3'))
 
         try:
@@ -70,7 +69,7 @@ class DatabaseManager(object):
 
         self.__db_cursor.execute(self.__db_sql)
 
-    def __insert_raw_material_info_data(self):
+    def __insert_inital_raw_material_info_data(self):
         params = []
         self.__db_sql = """DELETE FROM RAWMATERIAL_INFO """
         try:
@@ -91,11 +90,7 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-
-    def __add_raw_material_info_data(self):
-        pass
-
-    def __raw_material_info_query(self):
+    def __test_raw_material_info_query(self):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_INFO"""
         try:
             self.__db_cursor.execute(self.__db_sql)
@@ -107,12 +102,26 @@ class DatabaseManager(object):
             print("Error: {}".format(error.args))
             self.__erp_db.rollback()
 
-    def __init_table_raw_material_order(self):
-        pass
-
+    def insert__raw_material_info(self, in_id,in_name,in_cost,in_delivery_time):
+        self.__db_sql = """INSERT INTO RAWMATERIAL_INFO VALUES (%s,%s,%s,%s)"""
+        params = (in_id,in_name,in_cost,in_delivery_time)
+        try:
+            self.__db_cursor.execute(self.__db_sql,params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
 
     def insert_raw_material_order(self, in_raw_material_order):
-        self.__db_sql = """INSERT INTO RAWMATERIAL_INFO"""
+        self.__db_sql = """INSERT INTO RAWMATERIAL_ORDER VALUES (%s,%s,%s,%s,%s,%s,%s)"""
+        params = in_raw_material_order.get_attributes()
+        print(params)
+        try:
+            self.__db_cursor.execute(self.__db_sql, params)
+            self.__erp_db.commit()
+        except pymysql.DatabaseError as error:
+            self.__erp_db.rollback()
+            print("Error: {}".format(error.args))
 
     def query_raw_material_info(self, in_raw_material_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_INFO WHERE ID = %s"""

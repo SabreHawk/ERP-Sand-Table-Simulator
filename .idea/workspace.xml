@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b46999e-2813-464c-908b-41f25fb3466a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/ERP-Sand-Table-Simulator.iml" afterPath="$PROJECT_DIR$/.idea/ERP-Sand-Table-Simulator.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DatabaseManager.py" afterPath="$PROJECT_DIR$/DatabaseManager.py" />
+      <change beforePath="$PROJECT_DIR$/ERPDate.py" afterPath="$PROJECT_DIR$/ERPDate.py" />
       <change beforePath="$PROJECT_DIR$/ERPSystem.py" afterPath="$PROJECT_DIR$/ERPSystem.py" />
+      <change beforePath="$PROJECT_DIR$/RawMaterial.py" afterPath="$PROJECT_DIR$/RawMaterial.py" />
+      <change beforePath="$PROJECT_DIR$/RawMaterialOrder.py" afterPath="$PROJECT_DIR$/RawMaterialOrder.py" />
+      <change beforePath="$PROJECT_DIR$/RawMaterialOrderManager.py" afterPath="$PROJECT_DIR$/RawMaterialOrderManager.py" />
+      <change beforePath="$PROJECT_DIR$/Repository.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,9 +47,11 @@
       <file leaf-file-name="main.py" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,11 +59,22 @@
       <file leaf-file-name="ERPSystem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ERPSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="483">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#1143#1637#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryManager.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RepositoryManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,8 +82,8 @@
       <file leaf-file-name="RawMaterial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RawMaterial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -73,9 +92,20 @@
       <file leaf-file-name="RawMaterialOrder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="387">
+              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#861#878#0" expanded="false" />
+                <element signature="e#912#930#0" expanded="false" />
+                <element signature="e#973#994#0" expanded="false" />
+                <element signature="e#1039#1068#0" expanded="false" />
+                <element signature="e#1120#1150#0" expanded="false" />
+                <element signature="e#1193#1220#0" expanded="false" />
+                <element signature="e#1272#1302#0" expanded="false" />
+                <element signature="e#1342#1366#0" expanded="false" />
+                <element signature="e#1415#1442#0" expanded="false" />
+                <element signature="e#1484#1510#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +113,8 @@
       <file leaf-file-name="RawMaterialOrderManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -95,32 +125,31 @@
       <file leaf-file-name="ERPDate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ERPDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            <state relative-caret-position="364">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseManager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="54" column="83" lean-forward="false" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+            <state relative-caret-position="79">
+              <caret line="123" column="49" lean-forward="true" selection-start-line="123" selection-start-column="49" selection-end-line="123" selection-end-column="49" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#3611#3615#0" expanded="false" />
-                <element signature="e#3666#4045#0" expanded="false" />
-                <marker date="1514803088913" expanded="true" signature="826:929" ph="..." />
-                <marker date="1514803088913" expanded="true" signature="973:998" ph="..." />
-                <marker date="1514803088913" expanded="true" signature="1001:1452" ph="CREATE TABLE... IF" />
-                <marker date="1514803088913" expanded="true" signature="1600:1629" ph="DELETE FROM RAWMATERIAL_ORDER... " />
-                <marker date="1514803088913" expanded="true" signature="1860:1951" ph="INSERT INTO RAWMATERIAL_ORDER... " />
-                <marker date="1514803088913" expanded="true" signature="2448:2707" ph="CREATE TABLE... IF" />
-                <marker date="1514803088913" expanded="true" signature="2855:2883" ph="DELETE FROM RAWMATERIAL_INFO... " />
-                <marker date="1514803088913" expanded="true" signature="3115:3194" ph="INSERT INTO RAWMATERIAL_INFO... " />
-                <marker date="1514803088913" expanded="true" signature="4200:4228" ph="INSERT INTO RAWMATERIAL_INFO... " />
-                <marker date="1514803088913" expanded="true" signature="4319:4363" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+                <element signature="e#995#1516#0" expanded="false" />
+                <element signature="e#1581#2391#0" expanded="false" />
+                <element signature="e#1777#1851#0" expanded="false" />
+                <element signature="e#2449#2779#0" expanded="false" />
+                <element signature="e#2843#3583#0" expanded="false" />
+                <element signature="e#3639#4018#0" expanded="false" />
+                <marker date="1514815781917" expanded="true" signature="832:942" ph="..." />
+                <marker date="1514815781917" expanded="true" signature="4128:4177" ph="INSERT INTO RAWMATERIAL_INFO... " />
+                <marker date="1514815781917" expanded="true" signature="4572:4596" ph="INSERT INTO RAWMATERIAL_INFO... " />
+                <marker date="1514815781917" expanded="true" signature="4572:4631" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+                <marker date="1514815781917" expanded="true" signature="5042:5086" ph="SELECT * FRO... RAWMATERIAL_INFO" />
               </folding>
             </state>
           </provider>
@@ -147,14 +176,15 @@
         <option value="$PROJECT_DIR$/User.py" />
         <option value="$PROJECT_DIR$/Order.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="/&lt;Generic SQL&gt; Fragment (DatabaseManager.py:1002).sql" />
+        <option value="/&lt;Generic SQL&gt; Fragment (DatabaseManager.py:1003).sql" />
         <option value="$PROJECT_DIR$/RawMaterialOrderManager.py" />
         <option value="$PROJECT_DIR$/RawMaterial.py" />
         <option value="$PROJECT_DIR$/RawMaterialOrder.py" />
+        <option value="$PROJECT_DIR$/DatabaseManager.py" />
         <option value="$PROJECT_DIR$/ERPDate.py" />
         <option value="$PROJECT_DIR$/ERPSystem.py" />
-        <option value="/&lt;Generic SQL&gt; Fragment (DatabaseManager.py:1002).sql" />
-        <option value="/&lt;Generic SQL&gt; Fragment (DatabaseManager.py:1003).sql" />
-        <option value="$PROJECT_DIR$/DatabaseManager.py" />
+        <option value="$PROJECT_DIR$/RepositoryManager.py" />
       </list>
     </option>
   </component>
@@ -164,14 +194,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="60" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -184,10 +214,24 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ERP-Sand-Table-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ERP-Sand-Table-Simulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -207,7 +251,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.RawMaterialOrder">
+    <configuration name="RawMaterialOrder" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ERP-Sand-Table-Simulator" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RawMaterialOrder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ERP-Sand-Table-Simulator" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="database_tester" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,23 +327,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ERP-Sand-Table-Simulator" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,9 +445,10 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.database_tester" />
       <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.RawMaterialOrder" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -417,16 +483,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-11" y="49" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="0" y="0" width="435" height="842" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21109901" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37289914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23109244" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -472,7 +540,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -481,7 +549,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,6 +561,7 @@
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1143#1637#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -507,7 +578,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#861#878#0" expanded="false" />
+            <element signature="e#912#930#0" expanded="false" />
+            <element signature="e#973#994#0" expanded="false" />
+            <element signature="e#1039#1068#0" expanded="false" />
+            <element signature="e#1120#1150#0" expanded="false" />
+            <element signature="e#1193#1220#0" expanded="false" />
+            <element signature="e#1272#1302#0" expanded="false" />
+            <element signature="e#1342#1366#0" expanded="false" />
+            <element signature="e#1415#1442#0" expanded="false" />
+            <element signature="e#1484#1510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,18 +617,17 @@
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3611#3615#0" expanded="false" />
-            <element signature="e#3666#4045#0" expanded="false" />
-            <marker date="1514803088913" expanded="true" signature="826:929" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="973:998" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="1001:1452" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="1600:1629" ph="DELETE FROM RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="1860:1951" ph="INSERT INTO RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="2448:2707" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="2855:2883" ph="DELETE FROM RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="3115:3194" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4200:4228" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4319:4363" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+            <element signature="e#995#1516#0" expanded="false" />
+            <element signature="e#1581#2391#0" expanded="false" />
+            <element signature="e#1777#1851#0" expanded="false" />
+            <element signature="e#2449#2779#0" expanded="false" />
+            <element signature="e#2843#3583#0" expanded="false" />
+            <element signature="e#3639#4018#0" expanded="false" />
+            <marker date="1514815781917" expanded="true" signature="832:942" ph="..." />
+            <marker date="1514815781917" expanded="true" signature="4128:4177" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4596" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4631" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+            <marker date="1514815781917" expanded="true" signature="5042:5086" ph="SELECT * FRO... RAWMATERIAL_INFO" />
           </folding>
         </state>
       </provider>
@@ -555,7 +636,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -565,6 +648,7 @@
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1143#1637#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -581,7 +665,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#861#878#0" expanded="false" />
+            <element signature="e#912#930#0" expanded="false" />
+            <element signature="e#973#994#0" expanded="false" />
+            <element signature="e#1039#1068#0" expanded="false" />
+            <element signature="e#1120#1150#0" expanded="false" />
+            <element signature="e#1193#1220#0" expanded="false" />
+            <element signature="e#1272#1302#0" expanded="false" />
+            <element signature="e#1342#1366#0" expanded="false" />
+            <element signature="e#1415#1442#0" expanded="false" />
+            <element signature="e#1484#1510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -609,18 +704,17 @@
           <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3611#3615#0" expanded="false" />
-            <element signature="e#3666#4045#0" expanded="false" />
-            <marker date="1514803088913" expanded="true" signature="826:929" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="973:998" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="1001:1452" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="1600:1629" ph="DELETE FROM RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="1860:1951" ph="INSERT INTO RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="2448:2707" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="2855:2883" ph="DELETE FROM RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="3115:3194" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4200:4228" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4319:4363" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+            <element signature="e#995#1516#0" expanded="false" />
+            <element signature="e#1581#2391#0" expanded="false" />
+            <element signature="e#1777#1851#0" expanded="false" />
+            <element signature="e#2449#2779#0" expanded="false" />
+            <element signature="e#2843#3583#0" expanded="false" />
+            <element signature="e#3639#4018#0" expanded="false" />
+            <marker date="1514815781917" expanded="true" signature="832:942" ph="..." />
+            <marker date="1514815781917" expanded="true" signature="4128:4177" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4596" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4631" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+            <marker date="1514815781917" expanded="true" signature="5042:5086" ph="SELECT * FRO... RAWMATERIAL_INFO" />
           </folding>
         </state>
       </provider>
@@ -629,7 +723,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -639,6 +735,7 @@
           <caret line="39" column="98" lean-forward="false" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1143#1637#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -655,7 +752,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#861#878#0" expanded="false" />
+            <element signature="e#912#930#0" expanded="false" />
+            <element signature="e#973#994#0" expanded="false" />
+            <element signature="e#1039#1068#0" expanded="false" />
+            <element signature="e#1120#1150#0" expanded="false" />
+            <element signature="e#1193#1220#0" expanded="false" />
+            <element signature="e#1272#1302#0" expanded="false" />
+            <element signature="e#1342#1366#0" expanded="false" />
+            <element signature="e#1415#1442#0" expanded="false" />
+            <element signature="e#1484#1510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -683,18 +791,17 @@
           <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3611#3615#0" expanded="false" />
-            <element signature="e#3666#4045#0" expanded="false" />
-            <marker date="1514803088913" expanded="true" signature="826:929" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="973:998" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="1001:1452" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="1600:1629" ph="DELETE FROM RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="1860:1951" ph="INSERT INTO RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="2448:2707" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="2855:2883" ph="DELETE FROM RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="3115:3194" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4200:4228" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4319:4363" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+            <element signature="e#995#1516#0" expanded="false" />
+            <element signature="e#1581#2391#0" expanded="false" />
+            <element signature="e#1777#1851#0" expanded="false" />
+            <element signature="e#2449#2779#0" expanded="false" />
+            <element signature="e#2843#3583#0" expanded="false" />
+            <element signature="e#3639#4018#0" expanded="false" />
+            <marker date="1514815781917" expanded="true" signature="832:942" ph="..." />
+            <marker date="1514815781917" expanded="true" signature="4128:4177" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4596" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4631" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+            <marker date="1514815781917" expanded="true" signature="5042:5086" ph="SELECT * FRO... RAWMATERIAL_INFO" />
           </folding>
         </state>
       </provider>
@@ -713,6 +820,7 @@
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1143#1637#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,77 +877,116 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Order.py" />
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="uml://Python/#C:/Users/mySab/Documents/SourceCode/Project-Python/ERP-Sand-Table-Simulator/RawMaterialOrder.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#C:/Users/mySab/Documents/SourceCode/Project-Python/ERP-Sand-Table-Simulator/RawMaterialOrder.py</OriginalElement>
+          <nodes>
+            <node x="" y="">_collections_abc.Hashable</node>
+            <node x="" y="">RawMaterialOrder.RawMaterialOrder</node>
+            <node x="" y="">object</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="185.5" y="119.0" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="79">
+          <caret line="123" column="49" lean-forward="true" selection-start-line="123" selection-start-column="49" selection-end-line="123" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#995#1516#0" expanded="false" />
+            <element signature="e#1581#2391#0" expanded="false" />
+            <element signature="e#1777#1851#0" expanded="false" />
+            <element signature="e#2449#2779#0" expanded="false" />
+            <element signature="e#2843#3583#0" expanded="false" />
+            <element signature="e#3639#4018#0" expanded="false" />
+            <marker date="1514815781917" expanded="true" signature="832:942" ph="..." />
+            <marker date="1514815781917" expanded="true" signature="4128:4177" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4596" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514815781917" expanded="true" signature="4572:4631" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+            <marker date="1514815781917" expanded="true" signature="5042:5086" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ERPDate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        <state relative-caret-position="364">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#861#878#0" expanded="false" />
+            <element signature="e#912#930#0" expanded="false" />
+            <element signature="e#973#994#0" expanded="false" />
+            <element signature="e#1039#1068#0" expanded="false" />
+            <element signature="e#1120#1150#0" expanded="false" />
+            <element signature="e#1193#1220#0" expanded="false" />
+            <element signature="e#1272#1302#0" expanded="false" />
+            <element signature="e#1342#1366#0" expanded="false" />
+            <element signature="e#1415#1442#0" expanded="false" />
+            <element signature="e#1484#1510#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1143#1637#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RawMaterial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
+    <entry file="file://$PROJECT_DIR$/RepositoryManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="54" column="83" lean-forward="false" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3611#3615#0" expanded="false" />
-            <element signature="e#3666#4045#0" expanded="false" />
-            <marker date="1514803088913" expanded="true" signature="826:929" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="973:998" ph="..." />
-            <marker date="1514803088913" expanded="true" signature="1001:1452" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="1600:1629" ph="DELETE FROM RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="1860:1951" ph="INSERT INTO RAWMATERIAL_ORDER... " />
-            <marker date="1514803088913" expanded="true" signature="2448:2707" ph="CREATE TABLE... IF" />
-            <marker date="1514803088913" expanded="true" signature="2855:2883" ph="DELETE FROM RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="3115:3194" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4200:4228" ph="INSERT INTO RAWMATERIAL_INFO... " />
-            <marker date="1514803088913" expanded="true" signature="4319:4363" ph="SELECT * FRO... RAWMATERIAL_INFO" />
-          </folding>
+        <state relative-caret-position="675">
+          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

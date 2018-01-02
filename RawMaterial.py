@@ -1,10 +1,17 @@
 class RawMaterial(object):
 
-    def __init__(self, in_name, in_cost, in_delivery_time, in_quantity=1):
+    def __init__(self, in_id, in_name, in_cost, in_delivery_time, in_quantity=1):
+        self.__id = in_id
         self.__name = in_name
         self.__cost = in_cost
         self.__deliveryTime = in_delivery_time
         self.__quantity = in_quantity
+
+    def get_id(self):
+        return self.__id
+
+    def set_id(self,in_id):
+        self.__id = in_id
 
     def get_name(self):
         return self.__name

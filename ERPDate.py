@@ -13,10 +13,17 @@ class ERPDate(object):
             self.__quarter = 1
 
     def add_date(self, in_quarter):
-        self.__year += in_quarter // self.__quarter_num
-        self.__quarter += in_quarter % self.__quarter_num
-        return ERPDate(self.__year, self.__quarter)
+        print(in_quarter)
+        temp_year = self.__year + (self.__quarter + in_quarter) // self.__quarter_num
+        temp_quarter = (self.__quarter + in_quarter) % self.__quarter_num
+        if temp_quarter is 0:
+            temp_year -= 1
+            temp_quarter = 4
+        return ERPDate(temp_year, temp_quarter)
 
     def display_info(self):
         print("<Object : ERPDate")
-        print("Date : %s - %s>" % self.__year,self.__quarter)
+        print("Date : %s - %s>" % (str(self.__year), str(self.__quarter)))
+
+    def to_string(self):
+        return str(self.__year) + '-' + str(self.__quarter)
