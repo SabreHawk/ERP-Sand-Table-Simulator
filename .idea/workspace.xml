@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b46999e-2813-464c-908b-41f25fb3466a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ERP-Sand-Table-Simulator.iml" afterPath="$PROJECT_DIR$/.idea/ERP-Sand-Table-Simulator.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DatabaseManager.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ERP-System-Relation-Map.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ERPDate.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ERPSystem.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Factory.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Production.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProductionLine.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProductionOrder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RawMaterial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RawMaterialOrder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RawMaterialOrderManager.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RepositoryManager.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/User.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WorkShop.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App3/App3/obj/x86/Debug/App3.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/App3/App3/obj/x86/Debug/App3.csproj.CoreCompileInputs.cache" />
+      <change beforePath="$PROJECT_DIR$/ServerEnd-Python/DatabaseManager.py" afterPath="$PROJECT_DIR$/ServerEnd-Python/DatabaseManager.py" />
+      <change beforePath="$PROJECT_DIR$/ServerEnd-Python/ERPSystem.py" afterPath="$PROJECT_DIR$/ServerEnd-Python/ERPSystem.py" />
+      <change beforePath="$PROJECT_DIR$/ServerEnd-Python/main.py" afterPath="$PROJECT_DIR$/ServerEnd-Python/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,17 +35,100 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="DatabaseManager.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/ServerEnd-Python/DatabaseManager.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-1003">
+                    <caret line="279" column="10" lean-forward="false" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
+                    <folding>
+                      <element signature="e#0#14#0" expanded="true" />
+                      <element signature="e#958#1039#0" expanded="false" />
+                      <element signature="e#1095#1189#0" expanded="false" />
+                      <element signature="e#1246#1342#0" expanded="false" />
+                      <element signature="e#1396#1486#0" expanded="false" />
+                      <element signature="e#1548#1654#0" expanded="false" />
+                      <element signature="e#1714#1816#0" expanded="false" />
+                      <element signature="e#1871#1963#0" expanded="false" />
+                      <element signature="e#2016#2245#0" expanded="false" />
+                      <element signature="e#2303#2646#0" expanded="false" />
+                      <element signature="e#2705#3226#0" expanded="false" />
+                      <element signature="e#3282#3594#0" expanded="false" />
+                      <element signature="e#3658#3892#0" expanded="false" />
+                      <element signature="e#3954#4200#0" expanded="false" />
+                      <element signature="e#4257#4657#0" expanded="false" />
+                      <element signature="e#4714#5087#0" expanded="false" />
+                      <element signature="e#5153#5969#0" expanded="false" />
+                      <element signature="e#6034#6774#0" expanded="false" />
+                      <element signature="e#6837#7804#0" expanded="false" />
+                      <element signature="e#7875#8558#0" expanded="false" />
+                      <element signature="e#8627#9307#0" expanded="false" />
+                      <element signature="e#9371#10090#0" expanded="false" />
+                      <marker date="1514984408726" expanded="true" signature="10202:10251" ph="INSERT INTO RAWMATERIAL_INFO... " />
+                      <marker date="1514984408726" expanded="true" signature="10699:10758" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+                      <marker date="1514984408726" expanded="true" signature="11178:11220" ph="SELECT * FRO... ACCOUNT_INFO" />
+                      <marker date="1514984408726" expanded="true" signature="11576:11620" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+                      <marker date="1514984408726" expanded="true" signature="11988:12033" ph="SELECT * FRO... RAWMATERIAL_ORDER" />
+                      <marker date="1514984408726" expanded="true" signature="12397:12440" ph="SELECT * FRO... PRODUCTION_INFO" />
+                      <marker date="1514984408726" expanded="true" signature="12831:12893" ph="SELECT * FRO... RAWMATERIAL_REPOSITORY" />
+                      <marker date="1514984408726" expanded="true" signature="13282:13342" ph="SELECT * FRO... PRODUCTION_REPOSITORY" />
+                      <marker date="1514984408726" expanded="true" signature="13713:13757" ph="SELECT * FRO... PRODUCTION_ORDER" />
+                      <marker date="1514984408726" expanded="true" signature="14120:14157" ph="SELECT COUNT... RAWMATERIAL_INFO" />
+                      <marker date="1514984408726" expanded="true" signature="14515:14558" ph="SELECT COUNT... RAWMATERIAL_REPOSITORY" />
+                      <marker date="1514984408726" expanded="true" signature="14921:14995" ph="UPDATE RAWMATERIAL_REPOSITORY... " />
+                      <marker date="1514984408726" expanded="true" signature="15406:15478" ph="UPDATE PRODUCTION_REPOSITORY... " />
+                      <marker date="1514984408726" expanded="true" signature="15887:15941" ph="UPDATE PRODUCTION_ORDER... " />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ERP-Sand-Table-Simulator" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ServerEnd-Python/User.py">
+      <file leaf-file-name="ERPSystem.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ServerEnd-Python/ERPSystem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#5607#6429#0" expanded="false" />
+                <element signature="e#7077#7208#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Production.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerEnd-Python/Production.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerEnd-Python/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +139,11 @@
     <findStrings>
       <find>__insert_raw_material_order_data</find>
       <find>print</find>
+      <find>sys_commit_production_order</find>
+      <find>sys_query_production_order</find>
+      <find>sys_get_raw_material_category_remain_num</find>
+      <find>sys_get_raw_material_cat'egory_remain_num</find>
+      <find>sys_log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,6 +169,9 @@
         <option value="$PROJECT_DIR$/RawMaterialOrder.py" />
         <option value="$PROJECT_DIR$/DatabaseManager.py" />
         <option value="$PROJECT_DIR$/ERPSystem.py" />
+        <option value="$PROJECT_DIR$/ServerEnd-Python/DatabaseManager.py" />
+        <option value="$PROJECT_DIR$/ServerEnd-Python/main.py" />
+        <option value="$PROJECT_DIR$/ServerEnd-Python/ERPSystem.py" />
       </list>
     </option>
   </component>
@@ -122,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,7 +220,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,28 +499,28 @@
     <frame x="-11" y="49" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="435" height="842" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21109901" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37222221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23109244" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23109244" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37222221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -473,211 +553,32 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9180">
-          <caret line="340" column="49" lean-forward="true" selection-start-line="340" selection-start-column="49" selection-end-line="340" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2241">
-          <caret line="83" column="85" lean-forward="false" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="98" lean-forward="false" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RawMaterial.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py" />
+    <entry file="file://$PROJECT_DIR$/ERPDate.py" />
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/ERPSystem.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterial.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py" />
+    <entry file="file://$PROJECT_DIR$/ERPDate.py" />
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/ERPSystem.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterial.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py" />
+    <entry file="file://$PROJECT_DIR$/ERPDate.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py" />
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterial.py" />
+    <entry file="file://$PROJECT_DIR$/ERPSystem.py" />
     <entry file="file://$PROJECT_DIR$/test_code/testClass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -708,20 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/init_database.py" />
     <entry file="file://$PROJECT_DIR$/ERPData.py" />
-    <entry file="file://$PROJECT_DIR$/User.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="110" lean-forward="false" selection-start-line="8" selection-start-column="110" selection-end-line="8" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/User.py" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/Repository.py" />
     <entry file="file://$PROJECT_DIR$/Order.py" />
     <entry file="uml://Python/#C:/Users/mySab/Documents/SourceCode/Project-Python/ERP-Sand-Table-Simulator/RawMaterialOrder.py">
@@ -743,66 +632,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RepositoryManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPDate.py">
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrderManager.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterial.py" />
+    <entry file="file://$PROJECT_DIR$/RawMaterialOrder.py" />
+    <entry file="file://$PROJECT_DIR$/RepositoryManager.py" />
+    <entry file="file://$PROJECT_DIR$/ERPDate.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.py" />
+    <entry file="file://$PROJECT_DIR$/ERPSystem.py" />
+    <entry file="file://$PROJECT_DIR$/ServerEnd-Python/Production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ERPSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -812,6 +653,73 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerEnd-Python/DatabaseManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="279" column="10" lean-forward="false" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#958#1039#0" expanded="false" />
+            <element signature="e#1095#1189#0" expanded="false" />
+            <element signature="e#1246#1342#0" expanded="false" />
+            <element signature="e#1396#1486#0" expanded="false" />
+            <element signature="e#1548#1654#0" expanded="false" />
+            <element signature="e#1714#1816#0" expanded="false" />
+            <element signature="e#1871#1963#0" expanded="false" />
+            <element signature="e#2016#2245#0" expanded="false" />
+            <element signature="e#2303#2646#0" expanded="false" />
+            <element signature="e#2705#3226#0" expanded="false" />
+            <element signature="e#3282#3594#0" expanded="false" />
+            <element signature="e#3658#3892#0" expanded="false" />
+            <element signature="e#3954#4200#0" expanded="false" />
+            <element signature="e#4257#4657#0" expanded="false" />
+            <element signature="e#4714#5087#0" expanded="false" />
+            <element signature="e#5153#5969#0" expanded="false" />
+            <element signature="e#6034#6774#0" expanded="false" />
+            <element signature="e#6837#7804#0" expanded="false" />
+            <element signature="e#7875#8558#0" expanded="false" />
+            <element signature="e#8627#9307#0" expanded="false" />
+            <element signature="e#9371#10090#0" expanded="false" />
+            <marker date="1514984408726" expanded="true" signature="10202:10251" ph="INSERT INTO RAWMATERIAL_INFO... " />
+            <marker date="1514984408726" expanded="true" signature="10699:10758" ph="INSERT INTO RAWMATERIAL_ORDER... " />
+            <marker date="1514984408726" expanded="true" signature="11178:11220" ph="SELECT * FRO... ACCOUNT_INFO" />
+            <marker date="1514984408726" expanded="true" signature="11576:11620" ph="SELECT * FRO... RAWMATERIAL_INFO" />
+            <marker date="1514984408726" expanded="true" signature="11988:12033" ph="SELECT * FRO... RAWMATERIAL_ORDER" />
+            <marker date="1514984408726" expanded="true" signature="12397:12440" ph="SELECT * FRO... PRODUCTION_INFO" />
+            <marker date="1514984408726" expanded="true" signature="12831:12893" ph="SELECT * FRO... RAWMATERIAL_REPOSITORY" />
+            <marker date="1514984408726" expanded="true" signature="13282:13342" ph="SELECT * FRO... PRODUCTION_REPOSITORY" />
+            <marker date="1514984408726" expanded="true" signature="13713:13757" ph="SELECT * FRO... PRODUCTION_ORDER" />
+            <marker date="1514984408726" expanded="true" signature="14120:14157" ph="SELECT COUNT... RAWMATERIAL_INFO" />
+            <marker date="1514984408726" expanded="true" signature="14515:14558" ph="SELECT COUNT... RAWMATERIAL_REPOSITORY" />
+            <marker date="1514984408726" expanded="true" signature="14921:14995" ph="UPDATE RAWMATERIAL_REPOSITORY... " />
+            <marker date="1514984408726" expanded="true" signature="15406:15478" ph="UPDATE PRODUCTION_REPOSITORY... " />
+            <marker date="1514984408726" expanded="true" signature="15887:15941" ph="UPDATE PRODUCTION_ORDER... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerEnd-Python/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerEnd-Python/ERPSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#5607#6429#0" expanded="false" />
+            <element signature="e#7077#7208#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
