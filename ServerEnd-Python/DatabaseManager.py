@@ -239,27 +239,17 @@ class DatabaseManager(object):
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
 
-    def __test_raw_material_info_query(self):
-        self.__db_sql = """SELECT * FROM RAWMATERIAL_INFO"""
-        try:
-            self.__db_cursor.execute(self.__db_sql)
-            query_result = self.__db_cursor.fetchall()
-            for results in query_result:
-                print(results)
-
-        except pymysql.DatabaseError as error:
-            print("Error: {}".format(error.args))
-            self.__erp_db.rollback()
-
     def insert_raw_material_info(self, in_id, in_name, in_cost, in_delivery_time):
         self.__db_sql = """INSERT INTO RAWMATERIAL_INFO VALUES (%s,%s,%s,%s)"""
         params = (in_id, in_name, in_cost, in_delivery_time)
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def insert_raw_material_order(self, in_raw_material_order):
         self.__db_sql = """INSERT INTO RAWMATERIAL_ORDER VALUES (%s,%s,%s,%s,%s,%s,%s)"""
@@ -267,9 +257,11 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_account_info(self, in_name):
         self.__db_sql = "SELECT * FROM ACCOUNT_INFO WHERE NAME = %s"
@@ -279,6 +271,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_raw_material_info(self, in_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_INFO WHERE ID = %s"""
@@ -288,15 +281,17 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_raw_material_order(self, in_order_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_ORDER WHERE ID = %s"""
         try:
             self.__db_cursor.execute(self.__db_sql, str(in_order_id))
             return self.__db_cursor.fetchall()
-        except pymysql.DatabaseError as error:
+        except Exception as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_production_info(self, in_production_id):
         self.__db_sql = """SELECT * FROM PRODUCTION_INFO WHERE ID = %s"""
@@ -306,6 +301,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_raw_material_repository(self, in_raw_material_id):
         self.__db_sql = """SELECT * FROM RAWMATERIAL_REPOSITORY WHERE RAWMATERIAL_ID = %s"""
@@ -315,6 +311,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_production_repository(self, in_production_id):
         self.__db_sql = """SELECT * FROM PRODUCTION_REPOSITORY WHERE PRODUCTION_ID = %s"""
@@ -324,6 +321,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_production_order(self, in_id):
         self.__db_sql = """SELECT * FROM PRODUCTION_ORDER WHERE ID = %s"""
@@ -333,6 +331,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_raw_material_category_total_num(self):
         self.__db_sql = """SELECT COUNT(*) FROM RAWMATERIAL_INFO """
@@ -342,6 +341,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def query_raw_material_category_remain_num(self):
         self.__db_sql = """SELECT COUNT(*) FROM RAWMATERIAL_REPOSITORY """
@@ -351,6 +351,7 @@ class DatabaseManager(object):
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def update_raw_material_repository(self, in_id, in_num):
         self.__db_sql = "UPDATE RAWMATERIAL_REPOSITORY SET NUM = NUM + %s WHERE RAWMATERIAL_ID = %s"
@@ -358,9 +359,11 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def update_production_repository(self, in_id, in_num):
         self.__db_sql = "UPDATE PRODUCTION_REPOSITORY SET NUM = NUM + %s WHERE PRODUCTION_ID = %s"
@@ -368,9 +371,11 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def update_production_order(self, in_id, in_flag):
         self.__db_sql = """UPDATE PRODUCTION_ORDER SET STATUS = %s WHERE  ID = %s"""
@@ -378,9 +383,11 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql, params)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
 
     def close_database(self):
         self.__erp_db.close()
@@ -389,6 +396,8 @@ class DatabaseManager(object):
         try:
             self.__db_cursor.execute(self.__db_sql)
             self.__erp_db.commit()
+            return True
         except pymysql.DatabaseError as error:
             self.__erp_db.rollback()
             print("Error: {}".format(error.args))
+            return False
