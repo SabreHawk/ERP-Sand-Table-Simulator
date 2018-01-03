@@ -25,7 +25,7 @@ class ERPSystem(object):
         self.__sys_network_monitor()
 
     def __init_root_user(self):
-        root_user = User.User('root', '0000')
+        root_user = User.User('root', 'root')
         self.__active_user_list.append(root_user)
 
     def __init_function_dic(self):
