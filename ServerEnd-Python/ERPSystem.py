@@ -23,7 +23,7 @@ class ERPSystem(object):
     def __init_system(self):
         self.__init_root_user()
         self.__init_function_dic()
-       # self.__sys_network_monitor()
+        self.__sys_network_monitor()
 
     def __init_root_user(self):
         root_user = User.User('root', 'root')
