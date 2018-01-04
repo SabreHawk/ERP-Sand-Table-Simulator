@@ -46,7 +46,7 @@ class ERPSystem(object):
     def __sys_network_monitor(self):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-        host_ip = '45.77.121.117'
+        host_ip = '45.77.112.171'
         port = 1830
         server_socket.bind((host_ip, port))
         server_socket.listen(5)
