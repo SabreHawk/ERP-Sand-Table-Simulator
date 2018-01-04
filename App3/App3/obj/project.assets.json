@@ -25729,21 +25729,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Surface\\.nuget\\packages\\": {}
+    "C:\\Users\\Surface\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Surface\\source\\repos\\App3\\App3\\App3.csproj",
+      "projectUniqueName": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
       "projectName": "App3",
-      "projectPath": "C:\\Users\\Surface\\source\\repos\\App3\\App3\\App3.csproj",
+      "projectPath": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
       "packagesPath": "C:\\Users\\Surface\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Surface\\source\\repos\\App3\\App3\\obj\\",
+      "outputPath": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\Surface\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.10586"
@@ -25763,7 +25768,7 @@
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
-            "version": "6.0.1"
+            "version": "[6.0.1, )"
           }
         }
       }

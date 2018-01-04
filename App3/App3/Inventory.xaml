@@ -12,22 +12,25 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <RelativePanel Grid.Column="0">
-            <TextBlock Name="TextBlock_1"
-                       Margin="5,5,5,5"
-                       Width="Auto"
-                       Height="30"
-                       SelectionHighlightColor="Yellow"
-                       RelativePanel.AlignBottomWithPanel="True">
-                       >信息1</TextBlock>
-            <TextBlock Name="TextBlock_2"
-                       Margin="5,5,5,5"
-                       Width="Auto"
-                       Height="30"
-                       SelectionHighlightColor="Yellow"
-                       RelativePanel.AlignBottomWithPanel="True">
-                       >信息2</TextBlock>
-
-        </RelativePanel>
+        <StackPanel Grid.Column="0">
+            <TextBlock >模块1</TextBlock>
+            <TextBlock >模块2</TextBlock>
+            <TextBox></TextBox>
+            <Button Name="Add"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="20"
+                    Content="&#xE109;"
+                    Click="Add_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock >模块1</TextBlock>
+            <TextBlock >模块2</TextBlock>
+            <TextBox></TextBox>
+            <Button Name="Add2"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="20"
+                    Content="&#xE109;"
+                    Click="Add2_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

@@ -26,5 +26,13 @@ namespace App3
         {
             this.InitializeComponent();
         }
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add2_Click(object sender, RoutedEventArgs e)
+        {
+            if (true) return;
+        }
     }
 }

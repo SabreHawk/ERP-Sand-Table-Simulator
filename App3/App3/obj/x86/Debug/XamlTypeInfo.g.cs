@@ -132,23 +132,27 @@ namespace App3.App3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
-            _typeNameTable[0] = "App3.Inf_Factory";
+            _typeNameTable = new string[9];
+            _typeNameTable[0] = "App3.False";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "App3.Inf_Order";
-            _typeNameTable[4] = "App3.Inf_Summary";
-            _typeNameTable[5] = "App3.Inventory";
-            _typeNameTable[6] = "App3.MainPage";
+            _typeNameTable[3] = "App3.Inf_Factory";
+            _typeNameTable[4] = "App3.Inf_Order";
+            _typeNameTable[5] = "App3.Inf_Summary";
+            _typeNameTable[6] = "App3.Inventory";
+            _typeNameTable[7] = "App3.Login";
+            _typeNameTable[8] = "App3.MainPage";
 
-            _typeTable = new global::System.Type[7];
-            _typeTable[0] = typeof(global::App3.Inf_Factory);
+            _typeTable = new global::System.Type[9];
+            _typeTable[0] = typeof(global::App3.False);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::App3.Inf_Order);
-            _typeTable[4] = typeof(global::App3.Inf_Summary);
-            _typeTable[5] = typeof(global::App3.Inventory);
-            _typeTable[6] = typeof(global::App3.MainPage);
+            _typeTable[3] = typeof(global::App3.Inf_Factory);
+            _typeTable[4] = typeof(global::App3.Inf_Order);
+            _typeTable[5] = typeof(global::App3.Inf_Summary);
+            _typeTable[6] = typeof(global::App3.Inventory);
+            _typeTable[7] = typeof(global::App3.Login);
+            _typeTable[8] = typeof(global::App3.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,11 +187,13 @@ namespace App3.App3_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Inf_Factory() { return new global::App3.Inf_Factory(); }
-        private object Activate_3_Inf_Order() { return new global::App3.Inf_Order(); }
-        private object Activate_4_Inf_Summary() { return new global::App3.Inf_Summary(); }
-        private object Activate_5_Inventory() { return new global::App3.Inventory(); }
-        private object Activate_6_MainPage() { return new global::App3.MainPage(); }
+        private object Activate_0_False() { return new global::App3.False(); }
+        private object Activate_3_Inf_Factory() { return new global::App3.Inf_Factory(); }
+        private object Activate_4_Inf_Order() { return new global::App3.Inf_Order(); }
+        private object Activate_5_Inf_Summary() { return new global::App3.Inf_Summary(); }
+        private object Activate_6_Inventory() { return new global::App3.Inventory(); }
+        private object Activate_7_Login() { return new global::App3.Login(); }
+        private object Activate_8_MainPage() { return new global::App3.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -199,9 +205,9 @@ namespace App3.App3_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  App3.Inf_Factory
+            case 0:   //  App3.False
                 userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_Inf_Factory;
+                userType.Activator = Activate_0_False;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -214,30 +220,44 @@ namespace App3.App3_XamlTypeInfo
                 xamlType = new global::App3.App3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  App3.Inf_Order
+            case 3:   //  App3.Inf_Factory
                 userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Inf_Order;
+                userType.Activator = Activate_3_Inf_Factory;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  App3.Inf_Summary
+            case 4:   //  App3.Inf_Order
                 userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Inf_Summary;
+                userType.Activator = Activate_4_Inf_Order;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  App3.Inventory
+            case 5:   //  App3.Inf_Summary
                 userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Inventory;
+                userType.Activator = Activate_5_Inf_Summary;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  App3.MainPage
+            case 6:   //  App3.Inventory
                 userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_6_Inventory;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  App3.Login
+                userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  App3.MainPage
+                userType = new global::App3.App3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

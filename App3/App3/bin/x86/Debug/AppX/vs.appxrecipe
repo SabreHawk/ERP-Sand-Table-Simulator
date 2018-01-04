@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c7955899-6ead-4b0b-b686-13a1879a72b2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Surface</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Surface\source\repos\App3\App3\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>1B1679420BFD03BC4290D1EA255CAA5C03C0690D5D33EC556C38BE915321A768</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>27BF1BB7FBFB47E40265979E2D13CACAF405DF44867B8AD376409B0622A63B7B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c7955899-6ead-4b0b-b686-13a1879a72b2_1.0.0.0_x86__amwnxsxy4g0m2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c7955899-6ead-4b0b-b686-13a1879a72b2_amwnxsxy4g0m2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c7955899-6ead-4b0b-b686-13a1879a72b2</RegisteredPackageID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-02T02:24:17.029</Modified>
+      <Modified>2018-01-04T07:53:02.499</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\App3.exe">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.exe">
       <PackagePath>entrypoint\App3.exe</PackagePath>
-      <Modified>2018-01-02T02:24:14.442</Modified>
+      <Modified>2018-01-04T07:53:01.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,64 +495,68 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T15:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\order.jpg">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\order.jpg">
       <PackagePath>Assets\order.jpg</PackagePath>
       <Modified>2017-12-27T09:24:09.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Login.jpg">
+      <PackagePath>Assets\Login.jpg</PackagePath>
+      <Modified>2018-01-04T01:51:37.563</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-12-26T01:51:16.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\App3.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.xr.xml">
       <PackagePath>App3.xr.xml</PackagePath>
-      <Modified>2017-12-29T13:08:51.024</Modified>
+      <Modified>2018-01-04T07:53:01.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-02T02:24:16.461</Modified>
+      <Modified>2018-01-04T07:53:02.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\source\repos\App3\App3\bin\x86\Debug\Core\App3.exe">
+    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\App3.exe">
       <PackagePath>App3.exe</PackagePath>
-      <Modified>2018-01-02T02:24:17.001</Modified>
+      <Modified>2018-01-04T07:53:02.496</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -585,36 +589,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

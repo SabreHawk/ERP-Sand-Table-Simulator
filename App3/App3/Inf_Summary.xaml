@@ -20,6 +20,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        <TextBlock Text="工厂名称" FontSize="20"/>
         <Button Height="60" Width="80" Content="内容1" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10"/>
         <Button Height="60" Width="80" Content="内容2" Grid.Row="0" Grid.Column="1" Margin="10,10,10,10"/>
         <Button Height="60" Width="80" Content="内容3" Grid.Row="0" Grid.Column="2" Margin="10,10,10,10"/>
