@@ -8,53 +8,42 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Name="TextBox_1"
-                 Grid.Column="0"
-                 Grid.Row="0"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button Name="TextBlock_1"
-                Grid.Column="1"
-                Grid.Row="0"
-                Margin="10,5,0,5">确认</Button>
+        <StackPanel Grid.Column="0">
+            <TextBlock>查询产品信息</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="cxcpxx"/>
+                <Button Name="Chaxun"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                        Click="Chaxun_Click"/>
+            </StackPanel>
 
-        <TextBox Name="TextBox_2"
-                 Grid.Column="0"
-                 Grid.Row="1"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button Name="Button_2"
-                Grid.Column="1"
-                Grid.Row="1"
-                Margin="10,5,0,5">确认</Button>
-        
-        <TextBox Name="TextBox_3"
-                 Grid.Column="0"
-                 Grid.Row="2"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button Name="Button_3"
-                Grid.Column="1"
-                Grid.Row="2"
-                Margin="10,5,0,5">确认</Button>
+            <TextBlock Name="bianhao">编号：</TextBlock>
+            <TextBlock Name="minchen">名称：</TextBlock>
+            <TextBlock Name="yuanliao">原料组成</TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock>查询原料信息</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="cxylxx"/>
+                <Button Name="Chaxun_"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                        Click="Chaxun_1_Click"/>
+            </StackPanel>
+
+            <TextBlock Name="bianhao_">编号：</TextBlock>
+            <TextBlock Name="minchen_">名称：</TextBlock>
+            <TextBlock Name="jiage_">价格：</TextBlock>
+            <TextBlock Name="jiaohuo_">交货时间</TextBlock>
+        </StackPanel>
+
     </Grid>
 </Page>

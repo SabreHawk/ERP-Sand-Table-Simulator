@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/beijin1.jpg"/>
+        </Grid.Background>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -17,11 +21,11 @@
         <StackPanel Grid.Row="1" HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal" >
                 <TextBlock>用户名</TextBlock>
-                <TextBox Name="UserName"/>
+                <TextBox Name="UserName" Background="Yellow"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock>密码</TextBlock>
-                <TextBox Name="Password"/>
+                <TextBlock>密  码</TextBlock>
+                <PasswordBox Name="Password" />
             </StackPanel>
             <Button Name="LoginButton"
                     FontFamily="Segoe MDL2 Assets"

@@ -8,6 +8,54 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/order.jpg" VerticalAlignment="Top"/>
+        <StackPanel>
+            <TextBlock FontSize="24">订单信息查询</TextBlock>
+            <TextBlock>请输入订单编号：</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="Order_num"/>
+                <Button Name="Chaxun"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                        Click="Chaxun_Click"/>
+            </StackPanel>
+
+            <TextBlock Name="back_value"></TextBlock>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="id" Text="订单编号："/>
+                <TextBlock Name="id_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="name" Text="订单名称："/>
+                <TextBlock Name="name_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="yuanliaoid" Text="原料编号："/>
+                <TextBlock Name="yuanliaoid_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="shulang" Text="数量："/>
+                <TextBlock Name="shuangliang_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="jiaohuoshijian" Text="交货日期："/>
+                <TextBlock Name="jiaohuoshijian_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="dindanriqi" Text="订单日期："/>
+                <TextBlock Name="dindanriqi_value"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="chanshenriqi" Text="产生日期："/>
+                <TextBlock Name="chanshenriqi_value"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

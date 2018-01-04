@@ -8,54 +8,43 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:ConnectionId='1' Name="TextBox_1"
-                 Grid.Column="0"
-                 Grid.Row="0"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button x:ConnectionId='2' Name="TextBlock_1"
-                Grid.Column="1"
-                Grid.Row="0"
-                Margin="10,5,0,5">确认</Button>
+        <StackPanel Grid.Column="0">
+            <TextBlock>查询产品信息</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:ConnectionId='10' Name="cxcpxx"/>
+                <Button x:ConnectionId='11' Name="Chaxun"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                                            />
+            </StackPanel>
 
-        <TextBox x:ConnectionId='3' Name="TextBox_2"
-                 Grid.Column="0"
-                 Grid.Row="1"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button x:ConnectionId='4' Name="Button_2"
-                Grid.Column="1"
-                Grid.Row="1"
-                Margin="10,5,0,5">确认</Button>
-        
-        <TextBox x:ConnectionId='5' Name="TextBox_3"
-                 Grid.Column="0"
-                 Grid.Row="2"
-                 Width="150"
-                 Height="30"
-                 Margin="10,5,10,5"></TextBox>
-        <Button x:ConnectionId='6' Name="Button_3"
-                Grid.Column="1"
-                Grid.Row="2"
-                Margin="10,5,0,5">确认</Button>
+            <TextBlock x:ConnectionId='7' Name="bianhao">编号：</TextBlock>
+            <TextBlock x:ConnectionId='8' Name="minchen">名称：</TextBlock>
+            <TextBlock x:ConnectionId='9' Name="yuanliao">原料组成</TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock>查询原料信息</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:ConnectionId='5' Name="cxylxx"/>
+                <Button x:ConnectionId='6' Name="Chaxun_"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                                              />
+            </StackPanel>
+
+            <TextBlock x:ConnectionId='1' Name="bianhao_">编号：</TextBlock>
+            <TextBlock x:ConnectionId='2' Name="minchen_">名称：</TextBlock>
+            <TextBlock x:ConnectionId='3' Name="jiage_">价格：</TextBlock>
+            <TextBlock x:ConnectionId='4' Name="jiaohuo_">交货时间</TextBlock>
+        </StackPanel>
+
     </Grid>
 </Page>
 

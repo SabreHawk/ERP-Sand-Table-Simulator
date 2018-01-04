@@ -39,6 +39,9 @@ namespace App3
         {
             if(Inf_Summary.IsSelected)
             {
+                ImageBrush imageBrush = new ImageBrush();
+                FirstPage.Background = imageBrush;
+
                 MyFrame.Navigate(typeof(Inf_Summary));
                 TitleTextBlock.Text = "信息概览";
             }

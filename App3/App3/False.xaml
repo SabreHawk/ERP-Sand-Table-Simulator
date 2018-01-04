@@ -8,7 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock>登录失败</TextBlock>
-        <Button Name="back" Content="返回" Click="Back_Click"/>
+        <StackPanel>
+            <TextBlock>登录失败</TextBlock>
+            <Button Name="back" Content="返回" Click="Back_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

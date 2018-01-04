@@ -26,5 +26,51 @@ namespace App3
         {
             this.InitializeComponent();
         }
+        private void Chaxun_Click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_query_production_order " + cxcpxx.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                bianhao.Text = "编号：" + sArray[1];
+                minchen.Text = "名称：" + sArray[2];
+                yuanliao.Text = "原料组成:" + sArray[3];
+            }
+            else
+            {
+                bianhao.Text = "订单号输入错误";
+                minchen.Text = " ";
+                yuanliao.Text = "";
+            }
+
+
+        }
+        private void Chaxun_1_Click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_query_raw_material_order " + cxcpxx.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                bianhao_.Text = "编号：" + sArray[1];
+                minchen_.Text = "名称：" + sArray[2];
+                jiage_.Text = "价格:" + sArray[3];
+                jiaohuo_.Text = "交货时间" + sArray[4];
+            }
+            else
+            {
+                bianhao.Text = "订单号输入错误";
+                minchen.Text = " ";
+                jiage_.Text = "";
+                jiaohuo_.Text = " ";
+
+            }
+
+
+        }
+
     }
 }

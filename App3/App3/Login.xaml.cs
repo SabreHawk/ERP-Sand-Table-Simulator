@@ -30,7 +30,7 @@ namespace App3
 
         private void Login_Button(object sender, RoutedEventArgs e)
         {
-            string UsernameAddPassword = "sys_login \""+UserName.Text +"\" \""+ Password.Text+"\"";
+            string UsernameAddPassword = "sys_login \""+UserName.Text +"\" \""+ Password.Password+"\"";
 
             string isLogin = SystemManager.UploadAndDownload(UsernameAddPassword);
 

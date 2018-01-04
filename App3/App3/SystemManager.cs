@@ -41,20 +41,20 @@ namespace App3
         public static void function()///////这个函数仅展示
         {
             /*
-            'sys_add_raw_material_info' 
-            'sys_add_raw_material_order'
-            'sys_update_raw_material_repository' 
-            'sys_update_production_repository' 
-            'sys_query_raw_material_info' 
-            'sys_query_raw_material_order'
-            'sys_query_raw_material_repository' 
-            'sys_query_production_info' 
-            'sys_query_production_repository'
-            'sys_query_production_order' 
-            'sys_get_raw_material_category_total_num'
+            'sys_add_raw_material_info' 增加原料信息
+            'sys_add_raw_material_order'增加原料订单
+            'sys_update_raw_material_repository' 更新材料库存
+            'sys_update_production_repository' 更新生产库存
+            'sys_query_raw_material_info' 查询原料信息
+            'sys_query_raw_material_order'查询原料订单
+            'sys_query_raw_material_repository' 查询原料库存
+            'sys_query_production_info' 查询产品信息
+            'sys_query_production_repository'查询产品库存
+            'sys_query_production_order' 查询产品库存
+            'sys_get_raw_material_category_total_num'查询原料数量
             'sys_get_raw_material_category_remain_num'
             'sys_produce'这个是生产
-            'sys_commit_production_order'
+            'sys_commit_production_order'提交生产库存
             'sys_login'这个是登陆
             */
 

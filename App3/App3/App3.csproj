@@ -126,6 +126,10 @@
     <None Include="App3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\beijin1.jpg" />
+    <Content Include="Assets\beijin2.jpg" />
+    <Content Include="Assets\bejin3.jpg" />
+    <Content Include="Assets\bejin4.jpg" />
     <Content Include="Assets\order.jpg" />
     <Content Include="Assets\Login.jpg" />
     <Content Include="Properties\Default.rd.xml" />

@@ -25735,11 +25735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
+      "projectUniqueName": "C:\\Users\\Surface\\Documents\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
       "projectName": "App3",
-      "projectPath": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
+      "projectPath": "C:\\Users\\Surface\\Documents\\ERP-Sand-Table-Simulator\\App3\\App3\\App3.csproj",
       "packagesPath": "C:\\Users\\Surface\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Surface\\ERP-Sand-Table-Simulator\\App3\\App3\\obj\\",
+      "outputPath": "C:\\Users\\Surface\\Documents\\ERP-Sand-Table-Simulator\\App3\\App3\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

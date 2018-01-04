@@ -26,5 +26,36 @@ namespace App3
         {
             this.InitializeComponent();
         }
+        private void Chaxun_Click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_query_raw_material_order "+Order_num.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                back_value.Text = "";
+                id_value.Text = sArray[1];
+                name_value.Text = sArray[2];
+                yuanliaoid_value.Text = sArray[3];
+                shuangliang_value.Text = sArray[4];
+                jiaohuoshijian_value.Text = sArray[5];
+                dindanriqi_value.Text = sArray[6];
+                chanshenriqi_value.Text = sArray[7];
+            }
+            else
+            {
+                back_value.Text = "订单号输入错误";
+                id_value.Text = "";
+                name_value.Text = "";
+                yuanliaoid_value.Text = "";
+                shuangliang_value.Text = "";
+                jiaohuoshijian_value.Text = "";
+                dindanriqi_value.Text = "";
+                chanshenriqi_value.Text = "";
+            }
+
+
+        }
     }
 }

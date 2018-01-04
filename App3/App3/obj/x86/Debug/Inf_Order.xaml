@@ -8,7 +8,55 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/order.jpg" VerticalAlignment="Top"/>
+        <StackPanel>
+            <TextBlock FontSize="24">订单信息查询</TextBlock>
+            <TextBlock>请输入订单编号：</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:ConnectionId='16' Name="Order_num"/>
+                <Button x:ConnectionId='17' Name="Chaxun"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                                            />
+            </StackPanel>
+
+            <TextBlock x:ConnectionId='1' Name="back_value"></TextBlock>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='14' Name="id" Text="订单编号："/>
+                <TextBlock x:ConnectionId='15' Name="id_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='12' Name="name" Text="订单名称："/>
+                <TextBlock x:ConnectionId='13' Name="name_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='10' Name="yuanliaoid" Text="原料编号："/>
+                <TextBlock x:ConnectionId='11' Name="yuanliaoid_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='8' Name="shulang" Text="数量："/>
+                <TextBlock x:ConnectionId='9' Name="shuangliang_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='6' Name="jiaohuoshijian" Text="交货日期："/>
+                <TextBlock x:ConnectionId='7' Name="jiaohuoshijian_value"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='4' Name="dindanriqi" Text="订单日期："/>
+                <TextBlock x:ConnectionId='5' Name="dindanriqi_value"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='2' Name="chanshenriqi" Text="产生日期："/>
+                <TextBlock x:ConnectionId='3' Name="chanshenriqi_value"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
 

@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c7955899-6ead-4b0b-b686-13a1879a72b2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Surface</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>27BF1BB7FBFB47E40265979E2D13CACAF405DF44867B8AD376409B0622A63B7B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c7955899-6ead-4b0b-b686-13a1879a72b2_1.0.0.0_x86__amwnxsxy4g0m2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c7955899-6ead-4b0b-b686-13a1879a72b2_amwnxsxy4g0m2!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-04T07:53:02.499</Modified>
+      <Modified>2018-01-04T19:55:06.085</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.exe">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.exe">
       <PackagePath>entrypoint\App3.exe</PackagePath>
-      <Modified>2018-01-04T07:53:01.840</Modified>
+      <Modified>2018-01-04T19:55:04.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,68 +495,84 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T15:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\order.jpg">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\beijin1.jpg">
+      <PackagePath>Assets\beijin1.jpg</PackagePath>
+      <Modified>2018-01-04T13:44:19.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\beijin2.jpg">
+      <PackagePath>Assets\beijin2.jpg</PackagePath>
+      <Modified>2018-01-04T13:44:19.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\bejin3.jpg">
+      <PackagePath>Assets\bejin3.jpg</PackagePath>
+      <Modified>2018-01-04T13:44:19.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\bejin4.jpg">
+      <PackagePath>Assets\bejin4.jpg</PackagePath>
+      <Modified>2018-01-04T13:44:19.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\order.jpg">
       <PackagePath>Assets\order.jpg</PackagePath>
       <Modified>2017-12-27T09:24:09.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Login.jpg">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Login.jpg">
       <PackagePath>Assets\Login.jpg</PackagePath>
       <Modified>2018-01-04T01:51:37.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-12-26T01:51:16.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-14T09:45:03.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.xr.xml">
       <PackagePath>App3.xr.xml</PackagePath>
-      <Modified>2018-01-04T07:53:01.678</Modified>
+      <Modified>2018-01-04T19:55:04.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-04T07:53:02.300</Modified>
+      <Modified>2018-01-04T19:55:05.643</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\App3.exe">
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\Core\App3.exe">
       <PackagePath>App3.exe</PackagePath>
-      <Modified>2018-01-04T07:53:02.496</Modified>
+      <Modified>2018-01-04T19:55:06.073</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
