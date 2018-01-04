@@ -18,11 +18,12 @@ class ERPSystem(object):
         self.__request_msg = []
         self.__fcn_dic = []
         self.__init_system()
+        self.test_main()
 
     def __init_system(self):
         self.__init_root_user()
         self.__init_function_dic()
-        self.__sys_network_monitor()
+       # self.__sys_network_monitor()
 
     def __init_root_user(self):
         root_user = User.User('root', 'root')
@@ -40,7 +41,7 @@ class ERPSystem(object):
                           'sys_produce', 'sys_commit_production_order', 'sys_login']
 
     def test_main(self):
-        print(self.__sys_request_manager('sys_login "root" "root"'))
+        print(self.__sys_request_manager('sys_query_raw_material_repository 1'))
 
     def __sys_network_monitor(self):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -57,11 +58,11 @@ class ERPSystem(object):
             client_socket.close()
 
     def __sys_request_manager(self, in_msg):
-        in_msg = in_msg.split()
-        fcn_name = in_msg[0]
-        fcn_params = in_msg[1:]
-        call_fcn_cmd = 'self.' + fcn_name + '(' + ','.join(fcn_params) + ')'
         try:
+            in_msg = in_msg.split()
+            fcn_name = in_msg[0]
+            fcn_params = in_msg[1:]
+            call_fcn_cmd = 'self.' + fcn_name + '(' + ','.join(fcn_params) + ')'
             return eval(call_fcn_cmd)
         except Exception:
             return str(False)
