@@ -49,7 +49,7 @@ namespace App3
         }
         private void Chaxun_1_Click(object sender, RoutedEventArgs e)
         {
-            string chaxun = "sys_query_raw_material_order " + cxcpxx.Text;
+            string chaxun = "sys_query_raw_material_order " + cxylxx.Text;
 
             string result = SystemManager.UploadAndDownload(chaxun);
             string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);

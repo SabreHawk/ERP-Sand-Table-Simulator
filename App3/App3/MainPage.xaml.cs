@@ -48,12 +48,12 @@ namespace App3
             if (Inf_Factory.IsSelected)
             {
                 MyFrame.Navigate(typeof(Inf_Factory));
-                TitleTextBlock.Text = "厂房信息";
+                TitleTextBlock.Text = "产品/原料信息";
             }
             if (Inf_Order.IsSelected)
             {
                 MyFrame.Navigate(typeof(Inf_Order));
-                TitleTextBlock.Text = "订单信息";
+                TitleTextBlock.Text = "产品/原料订单";
             }
             if (Inventory.IsSelected)
             {

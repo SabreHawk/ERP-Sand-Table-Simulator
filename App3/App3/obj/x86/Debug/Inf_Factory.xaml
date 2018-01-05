@@ -7,43 +7,97 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/dabeijin1.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <TextBlock>查询产品信息</TextBlock>
-            <StackPanel Orientation="Horizontal">
-                <TextBox x:ConnectionId='10' Name="cxcpxx"/>
+        <Grid Grid.Column="0" Margin="20,20,20,20" >
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0">
+                <TextBox x:ConnectionId='10' Name="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+                <TextBlock RelativePanel.Above="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White"  >请输入产品编号</TextBlock>
                 <Button x:ConnectionId='11' Name="Chaxun"
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
                         Content="&#xE001;"
-                                            />
-            </StackPanel>
+                                             RelativePanel.Below="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White"/>
+            </RelativePanel>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <RelativePanel Grid.Row="1">
+                    <TextBlock x:ConnectionId='9' Name="bianhao" Grid.Row="1" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">编号：</TextBlock>
+                </RelativePanel>
+                <RelativePanel Grid.Row="2">
+                    <TextBlock x:ConnectionId='8' Name="minchen" Grid.Row="2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">名称：</TextBlock>
+                </RelativePanel>
+                <RelativePanel>
+                    <TextBlock x:ConnectionId='7' Name="yuanliao" Grid.Row="3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">原料组成:</TextBlock>
+                    
+                </RelativePanel>
+            </Grid>
+        </Grid>
 
-            <TextBlock x:ConnectionId='7' Name="bianhao">编号：</TextBlock>
-            <TextBlock x:ConnectionId='8' Name="minchen">名称：</TextBlock>
-            <TextBlock x:ConnectionId='9' Name="yuanliao">原料组成</TextBlock>
-        </StackPanel>
 
-        <StackPanel Grid.Column="1">
-            <TextBlock>查询原料信息</TextBlock>
-            <StackPanel Orientation="Horizontal">
-                <TextBox x:ConnectionId='5' Name="cxylxx"/>
+
+
+
+        <Grid Grid.Column="1" Margin="20,20,20,20" >
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0">
+                <TextBox x:ConnectionId='5' Name="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+                <TextBlock RelativePanel.Above="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White">请输入原来编号:</TextBlock>
                 <Button x:ConnectionId='6' Name="Chaxun_"
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        Content="&#xE001;"
-                                              />
-            </StackPanel>
-
-            <TextBlock x:ConnectionId='1' Name="bianhao_">编号：</TextBlock>
-            <TextBlock x:ConnectionId='2' Name="minchen_">名称：</TextBlock>
-            <TextBlock x:ConnectionId='3' Name="jiage_">价格：</TextBlock>
-            <TextBlock x:ConnectionId='4' Name="jiaohuo_">交货时间</TextBlock>
-        </StackPanel>
+                        Content="&#xE001;"  Foreground="White"
+                                               RelativePanel.Below="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            </RelativePanel>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <RelativePanel Grid.Row="1">
+                    <TextBlock x:ConnectionId='4'  Foreground="White" Name="bianhao_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">编号：</TextBlock>
+                </RelativePanel>
+                <RelativePanel Grid.Row="2">
+                    <TextBlock x:ConnectionId='3'  Foreground="White" Name="minchen_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">名称：</TextBlock>
+                </RelativePanel>
+                <RelativePanel Grid.Row="3">
+                    <TextBlock x:ConnectionId='2' Name="jiage_" Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">价格：</TextBlock>
+                </RelativePanel>
+                <RelativePanel Grid.Row="4">
+                    <TextBlock x:ConnectionId='1'  Foreground="White" Name="jiaohuo_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">交货时间</TextBlock>
+                </RelativePanel>
+            </Grid>
+        </Grid>
 
     </Grid>
 </Page>

@@ -54,8 +54,35 @@ namespace App3
                 dindanriqi_value.Text = "";
                 chanshenriqi_value.Text = "";
             }
-
-
         }
+
+        private void Chaxun_Click_(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_query_production_order " + Order_num.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                back_value_.Text = "";
+                id_value_.Text = sArray[1];
+                name_value_.Text = sArray[2];
+                yuanliaoid_value_.Text = sArray[3];
+                shuangliang_value_.Text = sArray[4];
+                jiaohuoshijian_value_.Text = sArray[5];
+            }
+            else
+            {
+                back_value_.Text = "订单号输入错误";
+                id_value_.Text = "";
+                name_value_.Text = "";
+                yuanliaoid_value_.Text = "";
+                shuangliang_value_.Text = "";
+                jiaohuoshijian_value_.Text = "";
+            }
+        }
+
+
+
     }
 }
