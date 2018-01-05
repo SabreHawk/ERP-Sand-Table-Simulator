@@ -382,14 +382,26 @@
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\bejin4.jpg">
       <PackagePath>Assets\bejin4.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\dabeijin.jpg">
+      <PackagePath>Assets\dabeijin.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\dabeijin1.jpg">
+      <PackagePath>Assets\dabeijin1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\dabeijin2.jpg">
+      <PackagePath>Assets\dabeijin2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\dabeijin3.jpg">
+      <PackagePath>Assets\dabeijin3.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\order.jpg">
       <PackagePath>Assets\order.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Login.jpg">
       <PackagePath>Assets\Login.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\xiaobeijin.png">
+      <PackagePath>Assets\xiaobeijin.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -417,6 +429,9 @@
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\bin\x86\Debug\App3.xr.xml">
       <PackagePath>App3.xr.xml</PackagePath>

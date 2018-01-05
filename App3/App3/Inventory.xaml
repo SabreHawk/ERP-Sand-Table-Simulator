@@ -7,64 +7,78 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/dabeijin3.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-                <TextBlock Foreground="Blue">产品库存</TextBlock>
-                <StackPanel Orientation="Horizontal">
-                    <Button Name="query1" Click="query1_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao1" />
-                    <TextBlock Name="yuanliao1_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query2" Click="query2_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao2" Text="产品2"/>
-                    <TextBlock Name="yuanliao2_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query3" Click="query3_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao3" Text="产品3"/>
-                    <TextBlock Name="yuanliao3_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query4" Click="query4_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao4" Text="产品4"/>
-                    <TextBlock Name="yuanliao4_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query5" Click="query5_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao5" Text="产品5"/>
-                    <TextBlock Name="yuanliao5_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query6" Click="query6_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao6" Text="产品6"/>
-                    <TextBlock Name="yuanliao6_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query7" Click="query7_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao7" Text="产品7"/>
-                    <TextBlock Name="yuanliao7_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query8" Click="query8_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao8" Text="产品8"/>
-                    <TextBlock Name="yuanliao8_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query9" Click="query9_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao9" Text="产品9"/>
-                    <TextBlock Name="yuanliao9_value"/>
-                </StackPanel>
-                <Button Name="Add"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="20"
-                            Content="&#xE109;"
-                            Click="Add_Click"/>
-            </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel Grid.Row="1" Grid.Column="0">
+            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">产品库存</TextBlock>
+        </RelativePanel>
+        <RelativePanel Grid.Row="2" Grid.Column="0">
+            <Button Name="query1" Click="query1_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+            <TextBox Name="yuanliao1" RelativePanel.LeftOf="query1" RelativePanel.AlignBottomWith="query1"  Foreground="White"/>
+            <TextBlock Name="yuanliao1_value" RelativePanel.RightOf="query1" RelativePanel.AlignBottomWith="query1"   Foreground="White"/>
+        </RelativePanel>
+        <RelativePanel Grid.Row="3" Grid.Column="0">
+            <Button Name="query2" Click="query2_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+            <TextBox Name="yuanliao2" RelativePanel.LeftOf="query2" RelativePanel.AlignBottomWith="query2" Foreground="White"/>
+            <TextBlock Name="yuanliao2_value" RelativePanel.RightOf="query2"  RelativePanel.AlignBottomWith="query2" Foreground="White"/>
+        </RelativePanel>
+        <RelativePanel Grid.Row="4" Grid.Column="0">
+            <Button Name="query3" Click="query3_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+            <TextBox Name="yuanliao3" RelativePanel.LeftOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
+            <TextBlock Name="yuanliao3_value" RelativePanel.RightOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
+        </RelativePanel>
+
+        <Grid Grid.Row="6" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="id" Grid.Column="1" Text="产品id" Height="20" Margin="5,5,5,5" Foreground="White"/>
+            <TextBox Name="num" Grid.Column="2" Text="库存" Height="20" Margin="5,5,5,5" Foreground="White"/>
+        </Grid>
+        <RelativePanel Grid.Row="7" Grid.Column="0">
+            <Button Name="Add"
+                    FontSize="20"
+                    Content="更新产品库存信息"
+                    Click="Add_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+        </RelativePanel>
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
 
             <StackPanel Grid.Column="1">
                 <TextBlock Foreground="Blue">原料库存</TextBlock>
@@ -83,41 +97,10 @@
                     <TextBox Name="yuanliao_3" Text="原料3"/>
                     <TextBlock Name="yuanliao_3_value"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_4" Click="query_4_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_4" Text="原料4"/>
-                    <TextBlock Name="yuanliao_4_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_5" Click="query_5_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_5" Text="原料5"/>
-                    <TextBlock Name="yuanliao_5_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_6" Click="query_6_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_6" Text="原料6"/>
-                    <TextBlock Name="yuanliao_6_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_7" Click="query_7_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_7" Text="原料7"/>
-                    <TextBlock Name="yuanliao_7_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_8" Click="query_8_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_8" Text="原料8"/>
-                    <TextBlock Name="yuanliao_8_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_9" Click="query_9_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_9" Text="原料9"/>
-                    <TextBlock Name="yuanliao_9_value"/>
-                </StackPanel>
 
                 <Button Name="Add2"
-                            FontFamily="Segoe MDL2 Assets"
                             FontSize="20"
-                            Content="&#xE109;"
+                            Content="更新原理库存"
                             Click="Add2_Click"/>
         </StackPanel>
     </Grid>

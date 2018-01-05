@@ -7,9 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <TextBlock FontSize="24">订单信息查询</TextBlock>
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/dabeijin.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0">
+            <TextBlock FontSize="24">原料订单信息查询</TextBlock>
             <TextBlock>请输入订单编号：</TextBlock>
             <StackPanel Orientation="Horizontal">
                 <TextBox Name="Order_num"/>
@@ -57,5 +65,49 @@
                 <TextBlock Name="chanshenriqi_value"/>
             </StackPanel>
         </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock FontSize="24">产品订单信息查询</TextBlock>
+            <TextBlock>请输入订单编号：</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="Order_num1"/>
+                <Button Name="Chaxun1"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Content="&#xE001;"
+                        Click="Chaxun_Click_"/>
+            </StackPanel>
+
+            <TextBlock Name="back_value_"></TextBlock>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="id_" Text="订单编号："/>
+                <TextBlock Name="id_value_"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="name_" Text="订单名称："/>
+                <TextBlock Name="name_value_"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="yuanliaoid_" Text="原料编号："/>
+                <TextBlock Name="yuanliaoid_value_"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="shulang_" Text="数量："/>
+                <TextBlock Name="shuangliang_value_"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="jiaohuoshijian_" Text="交货日期："/>
+                <TextBlock Name="jiaohuoshijian_value_"/>
+            </StackPanel>
+
+
+        </StackPanel>
+
+
     </Grid>
 </Page>
