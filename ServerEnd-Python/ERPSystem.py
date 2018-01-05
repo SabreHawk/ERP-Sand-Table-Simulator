@@ -49,7 +49,7 @@ class ERPSystem(object):
         host_ip = '45.77.112.171'
         port = 1830
         server_socket.bind((host_ip, port))
-        server_socket.listen(5)
+        server_socket.listen(50)
         while True:
             (client_socket, address) = server_socket.accept()
             request_msg = client_socket.recv(1024).decode('utf-8')
