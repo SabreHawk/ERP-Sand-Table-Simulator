@@ -15,93 +15,126 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <RelativePanel Grid.Row="1" Grid.Column="0">
-            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">产品库存</TextBlock>
-        </RelativePanel>
-        <RelativePanel Grid.Row="2" Grid.Column="0">
-            <Button Name="query1" Click="query1_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
-            <TextBox Name="yuanliao1" RelativePanel.LeftOf="query1" RelativePanel.AlignBottomWith="query1"  Foreground="White"/>
-            <TextBlock Name="yuanliao1_value" RelativePanel.RightOf="query1" RelativePanel.AlignBottomWith="query1"   Foreground="White"/>
-        </RelativePanel>
-        <RelativePanel Grid.Row="3" Grid.Column="0">
-            <Button Name="query2" Click="query2_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
-            <TextBox Name="yuanliao2" RelativePanel.LeftOf="query2" RelativePanel.AlignBottomWith="query2" Foreground="White"/>
-            <TextBlock Name="yuanliao2_value" RelativePanel.RightOf="query2"  RelativePanel.AlignBottomWith="query2" Foreground="White"/>
-        </RelativePanel>
-        <RelativePanel Grid.Row="4" Grid.Column="0">
-            <Button Name="query3" Click="query3_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
-            <TextBox Name="yuanliao3" RelativePanel.LeftOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
-            <TextBlock Name="yuanliao3_value" RelativePanel.RightOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
-        </RelativePanel>
 
-        <Grid Grid.Row="6" Grid.Column="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <TextBox Name="id" Grid.Column="1" Text="产品id" Height="20" Margin="5,5,5,5" Foreground="White"/>
-            <TextBox Name="num" Grid.Column="2" Text="库存" Height="20" Margin="5,5,5,5" Foreground="White"/>
+
+        <Grid Grid.Column="0" Margin="20,20,20,20">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <RelativePanel Grid.Row="1" Grid.Column="0">
+                <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">产品库存</TextBlock>
+            </RelativePanel>
+            <RelativePanel Grid.Row="2" Grid.Column="0">
+                <Button Name="query1" Click="query1_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao1" RelativePanel.LeftOf="query1" RelativePanel.AlignBottomWith="query1"  Foreground="White"/>
+                <TextBlock Name="yuanliao1_value" RelativePanel.RightOf="query1" RelativePanel.AlignBottomWith="query1"   Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="3" Grid.Column="0">
+                <Button Name="query2" Click="query2_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao2" RelativePanel.LeftOf="query2" RelativePanel.AlignBottomWith="query2" Foreground="White"/>
+                <TextBlock Name="yuanliao2_value" RelativePanel.RightOf="query2"  RelativePanel.AlignBottomWith="query2" Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="4" Grid.Column="0">
+                <Button Name="query3" Click="query3_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao3" RelativePanel.LeftOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
+                <TextBlock Name="yuanliao3_value" RelativePanel.RightOf="query3" RelativePanel.AlignBottomWith="query3" Foreground="White"/>
+            </RelativePanel>
+
+            <Grid Grid.Row="6" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Name="id" Grid.Column="1" Text="产品id" Height="20" Margin="5,5,5,5" Foreground="White"/>
+                <TextBox Name="num" Grid.Column="2" Text="库存" Height="20" Margin="5,5,5,5" Foreground="White"/>
+            </Grid>
+            <RelativePanel Grid.Row="7" Grid.Column="0">
+                <Button Name="Add"
+                        Content="更新产品库存信息"
+                        Click="Add_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="8" Grid.Column="0">
+                <TextBlock Name="backvalue_11" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></TextBlock>
+            </RelativePanel>
         </Grid>
-        <RelativePanel Grid.Row="7" Grid.Column="0">
-            <Button Name="Add"
-                    FontSize="20"
-                    Content="更新产品库存信息"
-                    Click="Add_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
-        </RelativePanel>
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
 
 
-            <StackPanel Grid.Column="1">
-                <TextBlock Foreground="Blue">原料库存</TextBlock>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_1" Click="query_1_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_1" />
-                    <TextBlock Name="yuanliao_1_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_2" Click="query_2_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_2" Text="原料2"/>
-                    <TextBlock Name="yuanliao_2_value"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                <Button Name="query_3" Click="query_3_Click" Margin="3,3,3,3">查询</Button>
-                    <TextBox Name="yuanliao_3" Text="原料3"/>
-                    <TextBlock Name="yuanliao_3_value"/>
-                </StackPanel>
+        <Grid Grid.Column="1" Margin="20,20,20,20">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                <Button Name="Add2"
-                            FontSize="20"
-                            Content="更新原理库存"
-                            Click="Add2_Click"/>
-        </StackPanel>
+            <RelativePanel Grid.Row="1" Grid.Column="1">
+                <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">原料库存</TextBlock>
+            </RelativePanel>
+            <RelativePanel Grid.Row="2" Grid.Column="1">
+                <Button Name="query_1" Click="query_1_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao_1" RelativePanel.LeftOf="query_1" RelativePanel.AlignBottomWith="query_1"  Foreground="White"/>
+                <TextBlock Name="yuanliao_1_value" RelativePanel.RightOf="query_1" RelativePanel.AlignBottomWith="query_1"   Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="3" Grid.Column="1">
+                <Button Name="query_2" Click="query_2_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao_2" RelativePanel.LeftOf="query_2" RelativePanel.AlignBottomWith="query_2" Foreground="White"/>
+                <TextBlock Name="yuanliao_2_value" RelativePanel.RightOf="query_2"  RelativePanel.AlignBottomWith="query_2" Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="4" Grid.Column="1">
+                <Button Name="query_3" Click="query_3_Click" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,0" Foreground="White">查询</Button>
+                <TextBox Name="yuanliao_3" RelativePanel.LeftOf="query_3" RelativePanel.AlignBottomWith="query_3" Foreground="White"/>
+                <TextBlock Name="yuanliao_3_value" RelativePanel.RightOf="query_3" RelativePanel.AlignBottomWith="query_3" Foreground="White"/>
+            </RelativePanel>
+
+            <Grid Grid.Row="6" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Name="id_" Grid.Column="1" Text="原料id" Height="20" Margin="5,5,5,5" Foreground="White"/>
+                <TextBox Name="num_" Grid.Column="2" Text="库存" Height="20" Margin="5,5,5,5" Foreground="White"/>
+            </Grid>
+            <RelativePanel Grid.Row="7" Grid.Column="1">
+                <Button Name="Add_"
+                    Content="更新原料库存信息"
+                    Click="Add_Click_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="8" Grid.Column="1">
+                <TextBlock Name="backvalue_12" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White"></TextBlock>
+            </RelativePanel>
+        </Grid>
+
+
     </Grid>
 </Page>

@@ -26,5 +26,22 @@ namespace App3
         {
             this.InitializeComponent();
         }
+        private void produce_click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_produce " + id_.Text + " " + num_.Text ;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                back_value.Text = "成功！";
+            }
+            else
+            {
+                back_value.Text = "失败！";
+            }
+
+
+        }
     }
 }

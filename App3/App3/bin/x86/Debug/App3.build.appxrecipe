@@ -400,6 +400,15 @@
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\Login.jpg">
       <PackagePath>Assets\Login.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\xiaobeijin - 复制%282%29.png">
+      <PackagePath>Assets\xiaobeijin - 复制%282%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\xiaobeijin - 复制%283%29.png">
+      <PackagePath>Assets\xiaobeijin - 复制%283%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\xiaobeijin - 复制.png">
+      <PackagePath>Assets\xiaobeijin - 复制.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Surface\Documents\ERP-Sand-Table-Simulator\App3\App3\Assets\xiaobeijin.png">
       <PackagePath>Assets\xiaobeijin.png</PackagePath>
     </AppxPackagedFile>

@@ -81,6 +81,42 @@ namespace App3
                 jiaohuoshijian_value_.Text = "";
             }
         }
+        private void add_click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_add_raw_material_order " + order_id.Text + " " + raw_material_id.Text + " " + num.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                backvalue.Text = "成功！";
+            }
+            else
+            {
+                backvalue.Text = "失败！";
+            }
+
+
+        }
+        private void commit_production_order_click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_add_raw_material_order " + produce_id.Text ;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                commit_production_order_tb.Text = "成功！";
+            }
+            else
+            {
+                commit_production_order_tb.Text = "失败！";
+            }
+
+
+        }
+
+
 
 
 

@@ -24,7 +24,7 @@
                 <TextBox Name="UserName" Background="Yellow"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock>密  码</TextBlock>
+                <TextBlock>密    码</TextBlock>
                 <PasswordBox Name="Password" />
             </StackPanel>
             <Button Name="LoginButton"

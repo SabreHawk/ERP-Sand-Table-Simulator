@@ -85,11 +85,24 @@ namespace App3
         }
         private void Add_Click(object sender, RoutedEventArgs e)           /////更新产品库存
         {
+            string chaxun = "sys_update_production_repository " + id.Text+" + "+num.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True") backvalue_11.Text = "更新成功";
+            else backvalue_11.Text = "更新失败";
+
 
         }
-        private void Add2_Click(object sender, RoutedEventArgs e)          //////更新原料库存
+        private void Add_Click_(object sender, RoutedEventArgs e)          //////更新原料库存
         {
-            if (true) return;
+            string chaxun = "sys_update_raw_material_repository " + id_.Text + " + " + num_.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True") backvalue_12.Text = "更新成功";
+            else backvalue_12.Text = "更新失败";
+
         }
     }
 }

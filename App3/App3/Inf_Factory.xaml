@@ -64,6 +64,7 @@
             <Grid.RowDefinitions >
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <RelativePanel Grid.Row="0">
                 <TextBox Name="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
@@ -81,21 +82,59 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <RelativePanel Grid.Row="1">
+                <RelativePanel Grid.Row="0">
                     <TextBlock  Foreground="White" Name="bianhao_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">编号：</TextBlock>
                 </RelativePanel>
-                <RelativePanel Grid.Row="2">
+                <RelativePanel Grid.Row="1">
                     <TextBlock  Foreground="White" Name="minchen_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">名称：</TextBlock>
                 </RelativePanel>
-                <RelativePanel Grid.Row="3">
+                <RelativePanel Grid.Row="2">
                     <TextBlock Name="jiage_" Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">价格：</TextBlock>
                 </RelativePanel>
-                <RelativePanel Grid.Row="4">
+                <RelativePanel Grid.Row="3">
                     <TextBlock  Foreground="White" Name="jiaohuo_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">交货时间</TextBlock>
                 </RelativePanel>
+                
+            </Grid>
+
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+
+                <RelativePanel Grid.Row="0">
+                    <TextBlock Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">你可以在此添加原料</TextBlock>
+                    
+                </RelativePanel>
+                
+                <RelativePanel Grid.Row="1">
+                    <Grid RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Name="id_" Grid.Column="0" Grid.Row="0" Foreground="White" Text="输入id" FontSize="10"/>
+                        <TextBox Name="name_" Grid.Column="1" Grid.Row="0" Foreground="White" Text="输入名称" FontSize="10"/>
+                        <TextBox Name="cost_" Grid.Column="0" Grid.Row="1" Foreground="White" Text="输入cost" FontSize="10"/>
+                        <TextBox Name="delivery_" Grid.Column="1" Grid.Row="1" Foreground="White" Text="交付时间" FontSize="10"/>
+                    </Grid>
+                </RelativePanel>
+                <RelativePanel Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                        <Button Name="add_" Content="Add" Foreground="White" Click="add_click"/>
+                        <TextBlock Name="back_value" Foreground="White"/>
+                    </StackPanel>
+                </RelativePanel>
+
             </Grid>
         </Grid>
 

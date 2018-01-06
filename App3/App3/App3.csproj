@@ -136,6 +136,9 @@
     <Content Include="Assets\dabeijin3.jpg" />
     <Content Include="Assets\order.jpg" />
     <Content Include="Assets\Login.jpg" />
+    <Content Include="Assets\xiaobeijin - 复制%282%29.png" />
+    <Content Include="Assets\xiaobeijin - 复制%283%29.png" />
+    <Content Include="Assets\xiaobeijin - 复制.png" />
     <Content Include="Assets\xiaobeijin.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

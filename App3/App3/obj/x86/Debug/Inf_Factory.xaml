@@ -24,9 +24,9 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <RelativePanel Grid.Row="0">
-                <TextBox x:ConnectionId='10' Name="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+                <TextBox x:ConnectionId='16' Name="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
                 <TextBlock RelativePanel.Above="cxcpxx" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White"  >请输入产品编号</TextBlock>
-                <Button x:ConnectionId='11' Name="Chaxun"
+                <Button x:ConnectionId='17' Name="Chaxun"
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
                         Content="&#xE001;"
@@ -41,13 +41,13 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <RelativePanel Grid.Row="1">
-                    <TextBlock x:ConnectionId='9' Name="bianhao" Grid.Row="1" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">编号：</TextBlock>
+                    <TextBlock x:ConnectionId='15' Name="bianhao" Grid.Row="1" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">编号：</TextBlock>
                 </RelativePanel>
                 <RelativePanel Grid.Row="2">
-                    <TextBlock x:ConnectionId='8' Name="minchen" Grid.Row="2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">名称：</TextBlock>
+                    <TextBlock x:ConnectionId='14' Name="minchen" Grid.Row="2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">名称：</TextBlock>
                 </RelativePanel>
                 <RelativePanel>
-                    <TextBlock x:ConnectionId='7' Name="yuanliao" Grid.Row="3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">原料组成:</TextBlock>
+                    <TextBlock x:ConnectionId='13' Name="yuanliao" Grid.Row="3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White">原料组成:</TextBlock>
                     
                 </RelativePanel>
             </Grid>
@@ -64,11 +64,12 @@
             <Grid.RowDefinitions >
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <RelativePanel Grid.Row="0">
-                <TextBox x:ConnectionId='5' Name="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
+                <TextBox x:ConnectionId='11' Name="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="5,5,5,5" Foreground="White"/>
                 <TextBlock RelativePanel.Above="cxylxx" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White">请输入原来编号:</TextBlock>
-                <Button x:ConnectionId='6' Name="Chaxun_"
+                <Button x:ConnectionId='12' Name="Chaxun_"
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
                         Content="&#xE001;"  Foreground="White"
@@ -81,21 +82,59 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+                <RelativePanel Grid.Row="0">
+                    <TextBlock x:ConnectionId='10'  Foreground="White" Name="bianhao_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">编号：</TextBlock>
+                </RelativePanel>
                 <RelativePanel Grid.Row="1">
-                    <TextBlock x:ConnectionId='4'  Foreground="White" Name="bianhao_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">编号：</TextBlock>
+                    <TextBlock x:ConnectionId='9'  Foreground="White" Name="minchen_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">名称：</TextBlock>
                 </RelativePanel>
                 <RelativePanel Grid.Row="2">
-                    <TextBlock x:ConnectionId='3'  Foreground="White" Name="minchen_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">名称：</TextBlock>
+                    <TextBlock x:ConnectionId='8' Name="jiage_" Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">价格：</TextBlock>
                 </RelativePanel>
                 <RelativePanel Grid.Row="3">
-                    <TextBlock x:ConnectionId='2' Name="jiage_" Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">价格：</TextBlock>
+                    <TextBlock x:ConnectionId='7'  Foreground="White" Name="jiaohuo_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">交货时间</TextBlock>
                 </RelativePanel>
-                <RelativePanel Grid.Row="4">
-                    <TextBlock x:ConnectionId='1'  Foreground="White" Name="jiaohuo_" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">交货时间</TextBlock>
+                
+            </Grid>
+
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+
+                <RelativePanel Grid.Row="0">
+                    <TextBlock Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">你可以在此添加原料</TextBlock>
+                    
                 </RelativePanel>
+                
+                <RelativePanel Grid.Row="1">
+                    <Grid RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox x:ConnectionId='3' Name="id_" Grid.Column="0" Grid.Row="0" Foreground="White" Text="输入id" FontSize="10"/>
+                        <TextBox x:ConnectionId='4' Name="name_" Grid.Column="1" Grid.Row="0" Foreground="White" Text="输入名称" FontSize="10"/>
+                        <TextBox x:ConnectionId='5' Name="cost_" Grid.Column="0" Grid.Row="1" Foreground="White" Text="输入cost" FontSize="10"/>
+                        <TextBox x:ConnectionId='6' Name="delivery_" Grid.Column="1" Grid.Row="1" Foreground="White" Text="交付时间" FontSize="10"/>
+                    </Grid>
+                </RelativePanel>
+                <RelativePanel Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                        <Button x:ConnectionId='1' Name="add_" Content="Add" Foreground="White"                  />
+                        <TextBlock x:ConnectionId='2' Name="back_value" Foreground="White"/>
+                    </StackPanel>
+                </RelativePanel>
+
             </Grid>
         </Grid>
 

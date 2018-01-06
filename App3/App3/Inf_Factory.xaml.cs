@@ -71,6 +71,23 @@ namespace App3
 
 
         }
+        private void add_click(object sender, RoutedEventArgs e)
+        {
+            string chaxun = "sys_add_raw_material_info " + id_.Text+" "+name_.Text+" "+cost_.Text+ " " +delivery_.Text;
+
+            string result = SystemManager.UploadAndDownload(chaxun);
+            string[] sArray = result.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            if (sArray[0] == "True")
+            {
+                back_value.Text="成功！";
+            }
+            else
+            {
+                back_value.Text = "失败！";                
+            }
+
+
+        }
 
     }
 }

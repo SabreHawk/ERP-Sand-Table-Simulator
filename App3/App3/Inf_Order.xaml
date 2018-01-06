@@ -15,98 +15,246 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="20,20,20,20">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0">
+                <TextBlock  Foreground="White" FontSize="24" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">原料订单信息查询</TextBlock>
+            </RelativePanel>
+                
+            <RelativePanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBox  Foreground="White" Name="Order_num"/>
+                    <Button Foreground="White"  Name="Chaxun"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="20"
+                                Content="&#xE001;"
+                                Click="Chaxun_Click"/>
+                </StackPanel>
+            </RelativePanel>
+                
+            <RelativePanel Grid.Row="2">
+                <TextBlock Foreground="White"  Name="back_value" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"></TextBlock>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="3">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock  Foreground="White" Name="id" Text="订单编号："/>
+                    <TextBlock Foreground="White"  Name="id_value"/>
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="4">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Foreground="White"  Name="name" Text="订单名称："/>
+                    <TextBlock  Foreground="White" Name="name_value"/>
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="5">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Foreground="White"  Name="yuanliaoid" Text="原料编号："/>
+                    <TextBlock  Foreground="White" Name="yuanliaoid_value"/>
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="6">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Foreground="White"  Name="shulang" Text="数量："/>
+                    <TextBlock Foreground="White"  Name="shuangliang_value"/>
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="7">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock  Foreground="White" Name="jiaohuoshijian" Text="交货日期："/>
+                    <TextBlock Foreground="White"  Name="jiaohuoshijian_value"/>
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="8">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="dindanriqi" Foreground="White"  Text="订单日期："/>
+                    <TextBlock Name="dindanriqi_value" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
+            
+            <RelativePanel Grid.Row="9">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="chanshenriqi"  Foreground="White" Text="产生日期："/>
+                    <TextBlock Name="chanshenriqi_value" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
+            
+            
+            
+
+            <RelativePanel Grid.Row="11">
+                <TextBlock Foreground="White" Text="你可以在此添加原料订单" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="12">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBox Name="order_id" Grid.Column="0" Grid.Row="0" Foreground="White" Text="订单号" FontSize="10"/>
+                    <TextBox Name="raw_material_id" Grid.Column="1" Grid.Row="0" Foreground="White" Text="材料号" FontSize="10"/>
+                    <TextBox Name="num" Grid.Column="0" Grid.Row="1" Foreground="White" Text="数量" FontSize="10"/>
+                </StackPanel>
+            </RelativePanel>
+            <RelativePanel Grid.Row="13">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <Button Name="add_" Content="Add" Foreground="White" Click="add_click"/>
+                    <TextBlock Name="backvalue" Foreground="White"/>
+                </StackPanel>
+            </RelativePanel>
+            
+        </Grid>
+
         
-        <StackPanel Grid.Column="0">
-            <TextBlock FontSize="24">原料订单信息查询</TextBlock>
-            <TextBlock>请输入订单编号：</TextBlock>
-            <StackPanel Orientation="Horizontal">
-                <TextBox Name="Order_num"/>
-                <Button Name="Chaxun"
-                        FontFamily="Segoe MDL2 Assets"
-                        FontSize="20"
-                        Content="&#xE001;"
-                        Click="Chaxun_Click"/>
-            </StackPanel>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Grid Grid.Column="1" Margin="20,20,20,20">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0">
+                <TextBlock FontSize="24" RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White"
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">产品订单信息查询</TextBlock>
+            </RelativePanel>
 
-            <TextBlock Name="back_value"></TextBlock>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="id" Text="订单编号："/>
-                <TextBlock Name="id_value"/>
-            </StackPanel>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="name" Text="订单名称："/>
-                <TextBlock Name="name_value"/>
-            </StackPanel>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="yuanliaoid" Text="原料编号："/>
-                <TextBlock Name="yuanliaoid_value"/>
-            </StackPanel>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="shulang" Text="数量："/>
-                <TextBlock Name="shuangliang_value"/>
-            </StackPanel>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="jiaohuoshijian" Text="交货日期："/>
-                <TextBlock Name="jiaohuoshijian_value"/>
-            </StackPanel>
-            
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="dindanriqi" Text="订单日期："/>
-                <TextBlock Name="dindanriqi_value"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="chanshenriqi" Text="产生日期："/>
-                <TextBlock Name="chanshenriqi_value"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1">
-            <TextBlock FontSize="24">产品订单信息查询</TextBlock>
-            <TextBlock>请输入订单编号：</TextBlock>
-            <StackPanel Orientation="Horizontal">
-                <TextBox Name="Order_num1"/>
-                <Button Name="Chaxun1"
+            <RelativePanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBox Foreground="White" Name="Order_num1"/>
+                    <Button Name="Chaxun1" Foreground="White" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
                         Content="&#xE001;"
                         Click="Chaxun_Click_"/>
-            </StackPanel>
+                </StackPanel>
+            </RelativePanel>
 
-            <TextBlock Name="back_value_"></TextBlock>
+            <RelativePanel Grid.Row="2">
+                <TextBlock Name="back_value_"  Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"></TextBlock>
+            </RelativePanel>
 
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="id_" Text="订单编号："/>
-                <TextBlock Name="id_value_"/>
-            </StackPanel>
+            <RelativePanel Grid.Row="3">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="id_" Text="订单编号：" Foreground="White" />
+                    <TextBlock Name="id_value_" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
 
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="name_" Text="订单名称："/>
-                <TextBlock Name="name_value_"/>
-            </StackPanel>
+            <RelativePanel Grid.Row="4">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="name_" Text="订单名称：" Foreground="White" />
+                    <TextBlock Name="name_value_" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
 
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="yuanliaoid_" Text="原料编号："/>
-                <TextBlock Name="yuanliaoid_value_"/>
-            </StackPanel>
+            <RelativePanel Grid.Row="5">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="yuanliaoid_" Text="原料编号：" Foreground="White" />
+                    <TextBlock Name="yuanliaoid_value_" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
 
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="shulang_" Text="数量："/>
-                <TextBlock Name="shuangliang_value_"/>
-            </StackPanel>
+            <RelativePanel Grid.Row="6">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="shulang_" Text="数量：" Foreground="White" />
+                    <TextBlock Name="shuangliang_value_" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
 
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Name="jiaohuoshijian_" Text="交货日期："/>
-                <TextBlock Name="jiaohuoshijian_value_"/>
-            </StackPanel>
+            <RelativePanel Grid.Row="7">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock Name="jiaohuoshijian_" Text="交货日期：" Foreground="White" />
+                    <TextBlock Name="jiaohuoshijian_value_" Foreground="White" />
+                </StackPanel>
+            </RelativePanel>
+
+            <RelativePanel Grid.Row="9">
+                <TextBlock Foreground="White" Text="你可以在此提交产品订单" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            </RelativePanel>
+            <RelativePanel Grid.Row="10">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBox Name="produce_id" Grid.Column="0" Grid.Row="0" Foreground="White" Text="id" FontSize="12"/>
+                </StackPanel>
+            </RelativePanel>
+            <RelativePanel Grid.Row="11">
+                <StackPanel Orientation="Horizontal" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <Button Name="commit_production_order_bt" Content="Add" Foreground="White" Click="commit_production_order_click"/>
+                    <TextBlock Name="commit_production_order_tb" Foreground="White"/>
+                </StackPanel>
+            </RelativePanel>
 
 
-        </StackPanel>
+
+
+        </Grid>
 
 
     </Grid>

@@ -13,23 +13,159 @@
         </Grid.Background>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <ScrollViewer.Content>
-                <StackPanel>
-                    <TextBlock Text="公司名称：xxx"/>
-                    <TextBlock Text="管理员信息：root"/>
-                    <TextBlock Text="用户权限：高"/>
-                    <TextBlock Text="权益：30w"/>
-                    <TextBlock Text="现金：30w"/>
-                    <TextBlock Text="负债：10w"/>
-                    <TextBlock Text="贷款额度：1200w"/>
-                    <TextBlock Text="生产次数：3.5k"/>
-                    <TextBlock Text="原料品种：6"/>
-                    <TextBlock Text="产品品种：2"/>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="原料库存量："/>
-                        <TextBlock Text="5"/>
-                    </StackPanel>
-                    <TextBlock Text="产品库存量：20"/>
-                </StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0" Grid.Row="0" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                公司名称：xxx</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="0" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin - 复制.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                管理员信息：root</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="0" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin - 复制(2).png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                用户权限：高</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="3" Grid.Row="0" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin - 复制(3).png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                权益：30w</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="1" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                现金：30w</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="1" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                负债：10w</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="1" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                贷款额度：1200w</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="3" Grid.Row="1" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                生产次数：3.5k</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="2" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                原料品种：6</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="2" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       Foreground="White">
+                                产品品种：2</TextBlock>
+                        </RelativePanel>
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="2" Margin="20,20,20,20">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/xiaobeijin.png"/>
+                        </Grid.Background>
+                        <RelativePanel >
+                            <Grid RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                                       >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <RelativePanel Grid.Row="0">
+                                    <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                                        <TextBox x:ConnectionId='3' Foreground="White" Name="id_" Text="id"></TextBox>
+                                        <TextBox x:ConnectionId='4' Foreground="White" Name="num_" Text="数量"></TextBox>
+                                    </StackPanel>
+                                </RelativePanel>
+                                <RelativePanel Grid.Row="1">
+                                    <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                                       <Button x:ConnectionId='1' Foreground="White" Name="produce" Content="生产"                      />
+                                        <TextBlock x:ConnectionId='2' Name="back_value"/>
+                                    </StackPanel>
+                                </RelativePanel>
+                            </Grid>
+                        </RelativePanel>
+                    </Grid>
+
+
+                </Grid>
             </ScrollViewer.Content>
         </ScrollViewer>
     </Grid>
